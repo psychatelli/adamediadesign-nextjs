@@ -1,0 +1,25 @@
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    // height: 100vh;
+    background: pink;
+    .homeBanner {
+        display: flex;
+        justify-content: center;
+        height: 55vh;
+    }
+
+    .bannerContent {
+        margin-top: 5%;
+    }
+    .bannerLogo {
+        width: 200px;        
+    }
+
+    .whiteSpan {
+        color:gray;
+    }
+
+}

@@ -2,7 +2,7 @@
  const Footer = () => {
     return (
         <div className='footer'>
-            <p>Adam</p>
+            <p>Adamedia Design - Copyright ©</p>
         </div>
     )
 }

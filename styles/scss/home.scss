@@ -3,6 +3,7 @@
 .home {
     display: flex;
     flex-direction: column;
+
     .firstRowWrapper{
         height: 95vh;
     }
@@ -14,11 +15,32 @@
 
     .bannerContent {
         margin-top: 5%;
+        font-weight: 500;
+
     }
     .bannerLogo {
-        width: 200px;        
+        width: 200px;   
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;     
     }
 
+    .adamedia {
+        margin: 10px 0px;
+        font-size: 18px;
+        font-weight: 600;
+   
+    }
+    .slogan {
+        font-size: 20px;
+        background: rgba(128, 128, 128, 0.247);
+        border: solid thin rgb(192, 191, 191);
+        padding: 10px;
+        span {
+            color: rgb(248, 252, 252);
+        }
+    }
     .whiteSpan {
         color:gray;
     }
@@ -29,6 +51,8 @@
         align-items: center;
         height: 50%;
         width: 100%;
+        border-top: solid 2px rgb(51, 51, 51);
+
     }
     
 
@@ -37,10 +61,14 @@
         flex-direction: column;
         transition: all 0.5s ease;
         background: $dark-gray;
-        opacity: 0.50;
+        opacity: 0.60;
         width: 30%;
-        height: 300px;
-        
+        height: 310px;
+        animation-name: fadeInOpacity;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-duration: 1s;
+
         .title {
             display: flex;
             align-items: center;
@@ -52,6 +80,16 @@
         }
         
 
+          @keyframes fadeInOpacity {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+
         .image {
             display: flex;
             justify-content: center;
@@ -61,31 +99,15 @@
     }
 
     .hover-box-2:hover {
-            opacity: 1.0;
+        opacity: 1.0;
+        cursor: pointer!important;
 
     }
+
+
+    
 
 }
 
 
 
-@media only screen and (max-width: 524px) {
-    .homeBanner {
-        height: 100vh!important;
-    }
-
-    .bannerContent {
-        margin-top: 30%!important;
-    }
-
-    .NavRow {
-        flex-direction: column;
-        height: auto!important;
-        
-    }
-
-    .hover-box-2 {
-        width: 80%!important;
-        margin: 5px 0px;
-    }
-}

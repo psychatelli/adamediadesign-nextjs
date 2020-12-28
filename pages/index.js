@@ -1,8 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Skills from '../components/Skills';
+import Link from 'next/link'
 
-export default function Home() {
+ const Home = () => {
+
+
+
+
+
   return (
     <div className='home'>
       <Head>
@@ -13,7 +19,6 @@ export default function Home() {
      
     <div className='firstRowWrapper'>
 
-   
           <div className="homeBanner" 
             style={{
               backgroundImage: "url(" + `${require("../public/home-bnr-1200.gif")}` + ")",
@@ -35,12 +40,12 @@ export default function Home() {
                   </div>
                   
                 </center>
-              <center> <p>ADAMEDIA DESIGN</p> </center>
+              <center> <div className='adamedia'>ADAMEDIA DESIGN</div> </center>
                 <center> 
-                  <p>
-                    <span className='whiteSpan'> SOFTWARE </span>  &
-                    <span className='whiteSpan'> MEDIA</span> AT ITS BEST
-                  </p>
+                  <div className='slogan'>
+                    <span> SOFTWARE </span>  & <span> MEDIA </span>
+                    AT ITS BEST
+                  </div>
                 </center>
             </div> 
           </div>
@@ -50,7 +55,7 @@ export default function Home() {
      
           <div className="NavRow"
             style={{
-            backgroundImage: "url(" + `${require("../public/background-b.jpg")}` + ")",
+            backgroundImage: "url(" + `${require("../public/NavRowBackground.png")}` + ")",
             width: "100%",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover"
@@ -96,15 +101,15 @@ export default function Home() {
               <div className="hover-box-2">
                 {/* <a href="process.php">  */}
                   <div className="title">
-                      <h4>PROCESS</h4>
+                      <h4>VIDEOS</h4>
                   </div>
 
                   <div className='image'>
                         <Image
-                        src="/../public/process.png"
+                        src="/../public/video_production_icon.png"
                         alt="Picture of the author"
-                        width={300}
-                        height={250}
+                        width={400}
+                        height={200}
                         />
                   </div>
                 {/* </a> */}
@@ -114,8 +119,13 @@ export default function Home() {
 
 
       </div>
-          {/* <Skills/> */}
+
+        <Skills/>
+       
       
     </div>
   )
 }
+
+
+export default Home;

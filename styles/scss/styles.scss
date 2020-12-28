@@ -150,26 +150,13 @@ h4, h5, h6 {
 
 
 /*SKILLS WIDGET */
-.section-wrapper {
-    padding: 25px;
-    height: 100%;
-    vertical-align: top;
-}
 
-
-.section-wrapper h2{
-    font-size: 50px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
 
 .white-row {
-    @extend .section-wrapper; 
     background: white; 
 }
 
 .blue-row {
-    @extend .section-wrapper;
     background: $primary-blue;
     margin-top: -25px;
     
@@ -195,7 +182,6 @@ h4, h5, h6 {
 }
 
 .black-row {
- @extend .section-wrapper; 
     background: black; 
     margin-top: -25px;
 }

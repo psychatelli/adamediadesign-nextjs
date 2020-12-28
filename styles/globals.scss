@@ -1,5 +1,6 @@
 
 @import "./scss/colors";
+@import "./scss/mediaQueries";
 @import "./scss/home.scss";
 @import "./scss/footer.scss";
 @import './scss/mainNav.scss';
@@ -10,7 +11,7 @@
 @import "./scss/circle90";
 @import "./scss/circle93";
 @import "./scss/circle93";
-@import "./scss/styles.scss";
+// @import "./scss/styles.scss";
 @import "./scss/skills.scss";
 
 html,
@@ -48,11 +49,7 @@ a {
        overflow-y: scroll; /* has to be scroll, not auto */
   
   }
-  
-  .scroll {
-     
-  }
-  
+ 
   
   p {
       font-size: 17px;
@@ -106,8 +103,7 @@ a {
       font-size: 17px;
   }
   
- 
-  
+
   
   /* HOME 3 SECTINO AREA  */
   .white-bg {
@@ -181,26 +177,13 @@ a {
   
   
   /*SKILLS WIDGET */
-  .section-wrapper {
-      padding: 25px;
-      height: 100%;
-      vertical-align: top;
-  }
-  
-  
-  .section-wrapper h2{
-      font-size: 50px;
-      margin-left: 20px;
-      margin-bottom: 20px;
-  }
+ 
   
   .white-row {
-      @extend .section-wrapper; 
       background: white; 
   }
   
   .blue-row {
-      @extend .section-wrapper;
       background: $primary-blue;
       margin-top: -25px;
       
@@ -226,7 +209,6 @@ a {
   }
   
   .black-row {
-   @extend .section-wrapper; 
       background: black; 
       margin-top: -25px;
   }
@@ -322,8 +304,9 @@ a {
   
   /*FOOTER*/
   #main_footer {
-      background: $dark-gray; 
-      Height: 100px;
+    //   background: $dark-gray; 
+    background: blue;
+      height: 100px;
       padding: 40px 0px;
       margin-top: 0px;
       margin-bottom: -25px;

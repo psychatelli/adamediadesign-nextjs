@@ -1,12 +1,18 @@
-.hexagon_wrap {
-    display: inline-block;
-}
 
+.skills {
+ display: flex;
+
+ flex-direction: column;
+ height: auto;
+ 
+.hexagon_wrap {
+    display: flex;
+}
 
 
 .hexagon_wrap p{
     color: #fff;
-    padding-top: 30px;
+    // padding-top: 30px;
 
 }
 
@@ -18,7 +24,11 @@
   border-left: solid 5px #58e9de;
   border-right: solid 5px #58e9de; 
   margin-right: 5px;
+
+ 
 }
+
+
     
 .hexagon:before,
 .hexagon:after {
@@ -42,3 +52,34 @@
   bottom: -90.3883px;
   border-bottom: solid 7.0711px #58e9de;
   border-left: solid 7.0711px #58e9de; }
+
+
+  .rowTitle {
+    font-size: 80px;
+    font-weight: 600;
+    margin: 25px 0px 0px 25px;
+    color: $mid-gray;
+    }
+
+  .hexigonContainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0px;
+
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+ 
+  .hexigonContainContainer.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+
+}

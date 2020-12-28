@@ -1,13 +1,29 @@
-import React from 'react'
+import  React, {useEffect, useState, useRef} from 'react'
 
 const Skills = () => {
     
-    return (
-        <>
-            <div className="section-wrapper dark-gray">
-                    <h2>SKILLS</h2>
 
-            <div className="col-10-lg center">    
+    const [isVisible, setVisible] = useState(true);
+
+    const domRef = useRef();
+
+    useEffect(() => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => setVisible(entry.isIntersecting));
+      });
+      observer.observe(domRef.current);
+      return () => observer.unobserve(domRef.current);
+    }, []);
+
+    return (
+            <div className="skills dark-gray">
+
+            <div className='rowTitle'>
+                <span>SKILLS</span>
+            </div>
+
+            <div className={`hexigonContainContainer ${isVisible ? 'is-visible' : ''}`} ref={domRef}>
+  
                 <div className="hexagon_wrap">
                     <div className="hexagon">
                         <p>JavaScript, NodeJS<br/>&<br/> Redux, ReactJS</p>
@@ -16,13 +32,13 @@ const Skills = () => {
 
                  <div className="hexagon_wrap">
                     <div className="hexagon">
-                        <p>Photoshop, Illustrator<br/>&<br/>Axure, Sketch</p>
+                        <p>Photoshop, Illustrator<br/>&<br/>Premiere, Sketch</p>
                     </div>
                 </div>
 
                 <div className="hexagon_wrap">
                     <div className="hexagon">
-                        <p>Bootstrap, Material<br/>&<br/>React Native</p>
+                        <p>Next.js<br/>&<br/>React Native</p>
                     </div>
                 </div>
                         
@@ -39,10 +55,9 @@ const Skills = () => {
                         UX/UI, Prototypes</p>
                     </div>
                 </div> 
-
             </div>
+
         </div>
-        </>
     )
 }
 

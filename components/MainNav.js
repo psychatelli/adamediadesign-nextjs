@@ -1,20 +1,29 @@
 
-import  React, {useEffect, useState, useRef} from 'react'
+import  React, { useState} from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import { makeStyles } from '@material-ui/core/styles';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-
-import Drawer from '@material-ui/core/Drawer';
+import ListItem from '@material-ui/core/ListItem';
+import List from '@material-ui/core/List';
+import ListItemText from '@material-ui/core/ListItemText';
 import Button from '@material-ui/core/Button';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import PersonIcon from '@material-ui/icons/Person';
+import ContactlessIcon from '@material-ui/icons/Contactless';
+import VideocamIcon from '@material-ui/icons/Videocam';
+import WebIcon from '@material-ui/icons/Web';
+import MenuIcon from '@material-ui/icons/Menu';
 
 
 
 const useStyles = makeStyles({
     list: {
-      width: 250,
+      width: 300,
+      
     },
     fullList: {
-      width: 'auto',
+      width: '300',
     },
   });
 
@@ -22,7 +31,7 @@ const useStyles = makeStyles({
 const MainNav = () => {
 
     const classes = useStyles();
-  const [state, setState] = React.useState({
+  const [state, setState] = useState({
     top: false,
     left: false,
     bottom: false,
@@ -41,29 +50,69 @@ const MainNav = () => {
     return (
         <div className='MainNav'>
             <div className='leftNavItems'>
-            <Image
-                src="/../public/Adamedia-Design-Logo.png"
-                alt="Picture of the author"
-                width={35}
-                height={35}
-            />
+                <Link href="/">
+                    <a> 
+                        <Image
+                            src="/../public/Adamedia-Design-Logo.png"
+                            alt="brand logo"
+                            width={35}
+                            height={35}
+                        />
+                    </a>
+                </Link>
             </div>
 
             <div className='rightNavItems'>
-            <Button onClick={toggleDrawer('left', true)}>Open</Button>
+            <Button onClick={toggleDrawer('left', true)}><MenuIcon/></Button>
             </div>
 
          
             <SwipeableDrawer
-      anchor='left'
-      open={state['left']}
-      onClose={toggleDrawer('left', false)}
-      onOpen={toggleDrawer('left', true)}
-    >
-      This is adam So don't mess with me or else Gato will get you
-    </SwipeableDrawer>
-   
+                anchor='left'
+                open={state['left']}
+                onClose={toggleDrawer('left', false)}
+                onOpen={toggleDrawer('left', true)}
+            >
+            
+            <div className='navList'>
+                <List style={{width: '270px'}}>
 
+                    <Link href="/about">
+                        <a> 
+                            <ListItem button>
+                                    <ListItemIcon><PersonIcon/> </ListItemIcon>
+                                    <ListItemText  primary='About' style={{color: 'black'}}/>
+                            </ListItem>
+                        </a>
+                    </Link>
+
+                    <Link href="/services/ux-ui">
+                        <a>
+                            <ListItem button>
+                                    <ListItemIcon><WebIcon/> </ListItemIcon>
+                                    <ListItemText  primary='Mobile & Web Apps' style={{color: 'black'}}/>
+                            </ListItem>
+                        </a>
+                    </Link>
+
+                    <ListItem button>
+                        <ListItemIcon><VideocamIcon/> </ListItemIcon>
+                        <ListItemText  primary='Videos' style={{color: 'black'}}/>
+                    </ListItem>
+
+                    <Link href="/contact">
+                        <a>
+                            <ListItem button>
+                                    <ListItemIcon><ContactlessIcon/> </ListItemIcon>
+                                    <ListItemText  primary='Contact' style={{color: 'black'}}/>
+                            </ListItem>
+                        </a>
+                    </Link>
+
+                </List>
+            </div>
+            </SwipeableDrawer>
+   
         </div>
     )
 }

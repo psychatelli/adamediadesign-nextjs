@@ -12,7 +12,7 @@ const Skills = () => {
         entries.forEach(entry => setVisible(entry.isIntersecting));
       });
       observer.observe(domRef.current);
-      return () => observer.unobserve(domRef.current);
+    //   return () => observer.unobserve(domRef.current);
     }, []);
 
     return (

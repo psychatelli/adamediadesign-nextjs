@@ -4,9 +4,11 @@
     align-items: center;
     padding: 10px;
     background: $lightest-gray;
-    .leftNavItems {
-    }
-    .rightNavItems {
+  
 
+    .navList {
+        width: 400px;
+        border: solid thin red;
     }
+    
 }

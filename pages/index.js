@@ -62,44 +62,45 @@ import Link from 'next/link'
           }}
           >
 
-            <div className="hover-box-2">
-                {/* <a href="ux-ui.php">  */}
-                <div className="title">
-                  <h4>SOFTWARE | WEB PROJECTS</h4>
+        <Link href="/services/ux-ui">
+                <div className="hover-box-2">
+                    <div className="title">
+                      <h4>SOFTWARE | WEB PROJECTS</h4>
+                    </div>
+
+                    <div className='image'>
+                    <Image
+                          src="/../public/projects-icon.png"
+                          alt="Picture of the author"
+                          width={400}
+                          height={200}
+                          />
+                    </div>  
+               
+
                 </div>
+            </Link>
+           
 
-                <div className='image'>
-                <Image
-                      src="/../public/projects-icon.png"
-                      alt="Picture of the author"
-                      width={400}
-                      height={200}
-                      />
-                </div>  
-                {/* </a> */}
-            </div>
+            <Link href="/about">
+                <div className="hover-box-2">
+                    <div className="title">
+                      <h4>ABOUT</h4>
+                    </div>
 
-
-              <div className="hover-box-2">
-                {/* <a href="about.php">  */}
-                  <div className="title">
-                    <h4>ABOUT</h4>
-                  </div>
-
-                  <div className='image'>
-                  <Image
-                      src="/../public/about-me-icon.png"
-                      alt="Picture of the author"
-                      width={400}
-                      height={250}
-                      />
-                  </div>
-                     
-              </div> 
-                  {/* </a> */}
+                    <div className='image'>
+                    <Image
+                        src="/../public/about-me-icon.png"
+                        alt="Picture of the author"
+                        width={400}
+                        height={250}
+                        />
+                    </div>
+                </div> 
+            </Link>
             
+            <Link href="/services/videos">
               <div className="hover-box-2">
-                {/* <a href="process.php">  */}
                   <div className="title">
                       <h4>VIDEOS</h4>
                   </div>
@@ -112,9 +113,8 @@ import Link from 'next/link'
                         height={200}
                         />
                   </div>
-                {/* </a> */}
               </div>
-
+            </Link>
           </div>
 
 

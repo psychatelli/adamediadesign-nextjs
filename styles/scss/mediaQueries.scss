@@ -32,6 +32,10 @@
     .leftColumn, .rightColumn {
         width: 100%!important;
     }
+
+    .contentAreaMobile {
+        flex-direction: column;
+    }
     // uxui page END
 
 }

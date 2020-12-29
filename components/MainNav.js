@@ -79,30 +79,30 @@ const MainNav = () => {
 
                     <Link href="/services/ux-ui">
                         <a>
-                            <ListItem button>
+                            <ListItem button onClick={toggleDrawer('left', false)}>
                                     <ListItemIcon><WebIcon/> </ListItemIcon>
                                     <ListItemText  primary='Mobile & Web Apps' style={{color: 'black'}}/>
                             </ListItem>
                         </a>
                     </Link>
 
-                    <ListItem button>
+                    <ListItem button onClick={toggleDrawer('left', false)}>
                         <ListItemIcon><VideocamIcon/> </ListItemIcon>
                         <ListItemText  primary='Videos' style={{color: 'black'}}/>
                     </ListItem>
 
                     <Link href="/about">
                         <a> 
-                            <ListItem button>
+                            <ListItem button onClick={toggleDrawer('left', false)}>
                                     <ListItemIcon><AccountCircleIcon/> </ListItemIcon>
                                     <ListItemText  primary='About' style={{color: 'black'}}/>
                             </ListItem>
                         </a>
                     </Link>
-                    
+
                     <Link href="/contact">
                         <a>
-                            <ListItem button>
+                            <ListItem button onClick={toggleDrawer('left', false)}>
                                     <ListItemIcon><ContactlessIcon/> </ListItemIcon>
                                     <ListItemText  primary='Contact' style={{color: 'black'}}/>
                             </ListItem>

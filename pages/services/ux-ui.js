@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
  const UXUI = () => {
     return (
@@ -25,23 +26,28 @@ import Image from 'next/image'
                     </div>
 
                     <div className='webAppImg zoom'>
-                        <Image
-                        src="/../public/mobile-interfaces.png"
-                        alt="Picture of the author"
-                        width={1200}
-                        height={450}
-                        />
+                        <Link href='/portfolio/logistics-software'>
+                            <a> 
+                                <Image
+                                src="/../public/mobile-interfaces.png"
+                                alt="Picture of the author"
+                                width={1200}
+                                height={450}
+                                />
+                            </a>
+                        </Link>
                     </div>
-                    
+                     
                     <center> 
-                        <a href="logistics-software.php"> <button className="btn myBtnDark">View</button></a> 
+                        <Link href='/portfolio/logistics-software'>
+                            <a> <button className="btn myBtnDark">View</button></a> 
+                        </Link>
                     </center>
             </div>
 
+
     <div className='twoColumns'>
-
       <div className='leftColumn'> 
-
         <div className="section_wrapper">
                 <div className="portfolioBox" style={{background: 'rgb(228, 227, 227)' }}> 
                     <div className="header_two"> 
@@ -49,17 +55,23 @@ import Image from 'next/image'
                     </div>
 
                     <div className='portfolioBoxImgWrapper zoom'>
-                        <Image
-                        src="/../public/wwo_app_1.png"
-                        alt="mobile project"
-                        width={500}
-                        height={1000}
-                        />
+                        <Link href='/portfolio/logistics-app'>
+                            <a> 
+                            <Image
+                            src="/../public/wwo_app_1.png"
+                            alt="mobile project"
+                            width={500}
+                            height={1000}
+                            />
+                            </a>
+                        </Link>
                     </div>
                            
 
                             <center> 
+                            <Link href='/portfolio/logistics-app'>
                             <a href="logistics-app.php"><button className="btn myBtnDark">View</button> </a>
+                            </Link>
                         </center>
                 </div>
         </div>
@@ -72,17 +84,23 @@ import Image from 'next/image'
                 </div>
 
                 <div className='portfolioBoxImgWrapper zoom'>
-                <Image
-                    src="/../public/knowFoodScreen1.png"
-                    alt="Picture of the author"
-                    width={500}
-                    height={1000}
-                    />
+                <Link href='/portfolio/food-networking-app'>
+                    <a> 
+                    <Image
+                        src="/../public/knowFoodScreen1.png"
+                        alt="Picture of the author"
+                        width={500}
+                        height={1000}
+                        />
+                    </a>
+                </Link>
                 </div>
 
-                    <center> 
-                        <a href="food-networking-app.php"><button className="btn myBtnDark">View</button> </a>
-                    </center>
+                <center> 
+                    <Link href='/portfolio/food-networking-app'>
+                        <a href="food-networking-app.php"><button className="btn myBtnDark">View</button></a>
+                    </Link>
+                </center>
              </div>
          </div>
     </div>
@@ -95,44 +113,48 @@ import Image from 'next/image'
                             </div>
 
                             <div className='portfolioBoxImgWrapper zoom'>
-                            <Image
-                                src="/../public/dashboard.png"
-                                alt="Picture of the author"
-                                width={500}
-                                height={500}
-                                className="" 
-                                />
+                                <Link href='/portfolio/dashboard'>
+                                    <a> 
+                                    <Image
+                                    src="/../public/dashboard.png"
+                                    alt="Picture of the author"
+                                    width={500}
+                                    height={500}
+                                    />
+                                    </a>
+                                </Link>
                             </div>
                                 <center> 
-                                    <a href="dashboard.php"><button className="btn myBtnDark">View</button> </a>
+                                    <a><button className="btn myBtnDark">View</button> </a>
                                 </center>
                         </div>
                     </div>
 
-
-
-
-                        <div className="section_wrapper">
+                    <div className="section_wrapper">
                             <div className="portfolioBox" style={{background: '#949596'}}> 
                                 <div className="header_two"> 
                                     <h3> Social Site </h3>
                                 </div>
 
                                 <div className='portfolioBoxImgWrapper zoom'>
-                                <Image
-                                    src="/../public/genepullHome.png"
-                                    alt="Picture of the author"
-                                    width={500}
-                                    height={500}
-                                    />
+                                <Link href='/portfolio/genepullsite'>
+                                    <a> 
+                                    <Image
+                                        src="/../public/genepullHome.png"
+                                        alt="Picture of the author"
+                                        width={500}
+                                        height={500}
+                                        />
+                                    </a>
+                                </Link>
                                 </div>
                                     <center> 
-                                        <a href="genepullsite.php"><button className="btn myBtnDark">View</button> </a>
+                                        <Link href='/portfolio/genepullsite'>
+                                            <a><button className="btn myBtnDark">View</button> </a>
+                                        </Link>
                                     </center>
                             </div>
-                        </div>
-
-
+                    </div>
 
                     <div className="section_wrapper">
                         <div className="portfolioBox" style={{background: 'aqua'}}> 
@@ -141,22 +163,25 @@ import Image from 'next/image'
                             </div>
                             
                             <div className='portfolioBoxImgWrapper zoom'>
-                            <Image
-                                src="/../public/bi-website.png"
-                                alt="Picture of the author"
-                                width={500}
-                                height={500}
-                                />
+                                <Link href='/portfolio/bi-floors'>
+                                    <a> 
+                                    <Image
+                                        src="/../public/bi-website.png"
+                                        alt="Picture of the author"
+                                        width={500}
+                                        height={500}
+                                        />
+                                    </a>
+                                </Link>
                             </div>
-                                <center> 
+                            <center> 
+                                <Link href='/portfolio/bi-floors'>
                                     <a href="bi-floors.php"><button className="btn myBtnDark">View</button> </a>
-                                </center>
+                                </Link>
+                            </center>
                         </div>
                     </div>
-         </div>
-
-   
-
+            </div>
         </div>
 
 

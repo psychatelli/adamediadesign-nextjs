@@ -76,8 +76,6 @@ import Link from 'next/link'
                           height={200}
                           />
                     </div>  
-               
-
                 </div>
             </Link>
            

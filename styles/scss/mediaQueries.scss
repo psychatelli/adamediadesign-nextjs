@@ -23,4 +23,15 @@
         margin: 5px 0px;
     }
 
+
+    // uxui page START
+    .twoColumns {
+        flex-direction: column;
+    }
+
+    .leftColumn, .rightColumn {
+        width: 100%!important;
+    }
+    // uxui page END
+
 }

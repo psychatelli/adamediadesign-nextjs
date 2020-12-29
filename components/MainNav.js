@@ -9,7 +9,7 @@ import List from '@material-ui/core/List';
 import ListItemText from '@material-ui/core/ListItemText';
 import Button from '@material-ui/core/Button';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-import PersonIcon from '@material-ui/icons/Person';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import ContactlessIcon from '@material-ui/icons/Contactless';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import WebIcon from '@material-ui/icons/Web';
@@ -77,15 +77,6 @@ const MainNav = () => {
             <div className='navList'>
                 <List style={{width: '270px'}}>
 
-                    <Link href="/about">
-                        <a> 
-                            <ListItem button>
-                                    <ListItemIcon><PersonIcon/> </ListItemIcon>
-                                    <ListItemText  primary='About' style={{color: 'black'}}/>
-                            </ListItem>
-                        </a>
-                    </Link>
-
                     <Link href="/services/ux-ui">
                         <a>
                             <ListItem button>
@@ -100,6 +91,15 @@ const MainNav = () => {
                         <ListItemText  primary='Videos' style={{color: 'black'}}/>
                     </ListItem>
 
+                    <Link href="/about">
+                        <a> 
+                            <ListItem button>
+                                    <ListItemIcon><AccountCircleIcon/> </ListItemIcon>
+                                    <ListItemText  primary='About' style={{color: 'black'}}/>
+                            </ListItem>
+                        </a>
+                    </Link>
+                    
                     <Link href="/contact">
                         <a>
                             <ListItem button>

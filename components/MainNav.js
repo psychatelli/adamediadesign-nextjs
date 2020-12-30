@@ -11,6 +11,7 @@ import Button from '@material-ui/core/Button';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import ContactlessIcon from '@material-ui/icons/Contactless';
+import HomeIcon from '@material-ui/icons/Home';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import WebIcon from '@material-ui/icons/Web';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -76,6 +77,15 @@ const MainNav = () => {
             
             <div className='navList'>
                 <List style={{width: '270px'}}>
+
+                    <Link href="/">
+                        <a>
+                            <ListItem button onClick={toggleDrawer('left', false)}>
+                                    <ListItemIcon><HomeIcon/> </ListItemIcon>
+                                    <ListItemText  primary='Home' style={{color: 'black'}}/>
+                            </ListItem>
+                        </a>
+                    </Link>
 
                     <Link href="/services/ux-ui">
                         <a>

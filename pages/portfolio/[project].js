@@ -21,7 +21,7 @@ import { portfolioData } from '../../portfolioData/portfolioData';
                 return <div>
 
                     <div className={item.bannerColor}>
-                            <h1 className='mainTitle'>{item.title}</h1>
+                            <div className='mainTitle customHeader'>{item.title}</div>
                              <h3>{item.subtitle}</h3>
                     </div>
 

@@ -3,6 +3,12 @@
     display: flex;
     flex-direction: column;
 
+    .customHeader {
+        color: white;
+        font-size: 50px;
+        font-weight: 700;
+    }
+    
     .contentAreaDestop {
         display: flex;
         flex-direction: column;

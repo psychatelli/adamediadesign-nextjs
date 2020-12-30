@@ -73,7 +73,7 @@ import Link from 'next/link'
                           src="/../public/projects-icon.png"
                           alt="Picture of the author"
                           width={400}
-                          height={200}
+                          height={170}
                           />
                     </div>  
                 </div>
@@ -118,6 +118,9 @@ import Link from 'next/link'
 
       </div>
 
+          <div className='myHex'>
+
+          </div>
         <Skills/>
        
       

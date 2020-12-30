@@ -8,6 +8,12 @@
         height: 100vh!important;
     }
 
+    .uxui{
+        .customHeader {
+            font-size: 40px!important;
+        }
+        
+    }
     .bannerContent {
         margin-top: 30%!important;
     }
@@ -38,4 +44,7 @@
     }
     // uxui page END
 
+    .videosContainer {
+        // justify-content: center!important;
+    }
 }

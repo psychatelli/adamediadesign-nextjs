@@ -6,12 +6,14 @@
 @import "./scss/pages/contact.scss";
 @import "./scss/pages/project.scss";
 @import "./scss/pages/uxuiHome.scss";
+@import "./scss/pages/videos.scss";
 @import "./scss/footer.scss";
 @import './scss/mainNav.scss';
 @import "./scss/banners";
 @import "./scss/media";
 @import "./scss/hover_img_effect";
 @import "./scss/skills.scss";
+
 
 html,
 body {
@@ -36,8 +38,8 @@ body {
 }
 
 .contentAreaShared {
-        width: 90%;
-        padding: 20px;
+        width: 100%;
+        padding: 10px;
         margin: 10px auto;
 
 }

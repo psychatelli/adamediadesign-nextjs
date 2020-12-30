@@ -64,10 +64,6 @@
         opacity: 0.60;
         width: 30%;
         height: 310px;
-        animation-name: fadeInOpacity;
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in;
-        animation-duration: 1s;
 
         .title {
             display: flex;
@@ -93,8 +89,8 @@
         .image {
             display: flex;
             justify-content: center;
-            flex-grow: 1;
             width: 100%;
+            height: 75%;
         }
     }
 

@@ -86,10 +86,14 @@ const MainNav = () => {
                         </a>
                     </Link>
 
-                    <ListItem button onClick={toggleDrawer('left', false)}>
-                        <ListItemIcon><VideocamIcon/> </ListItemIcon>
-                        <ListItemText  primary='Videos' style={{color: 'black'}}/>
-                    </ListItem>
+                    <Link href="/services/videos">
+                        <a>
+                        <ListItem button onClick={toggleDrawer('left', false)}>
+                            <ListItemIcon><VideocamIcon/> </ListItemIcon>
+                            <ListItemText  primary='Videos' style={{color: 'black'}}/>
+                        </ListItem>
+                        </a>
+                    </Link>
 
                     <Link href="/about">
                         <a> 

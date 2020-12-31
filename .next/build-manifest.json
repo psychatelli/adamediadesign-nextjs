@@ -31,6 +31,11 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
+    "/portfolio/[project]": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/portfolio/[project].js"
+    ],
     "/services/ux-ui": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",

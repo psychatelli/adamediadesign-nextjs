@@ -41,7 +41,7 @@ import { portfolioData } from '../../portfolioData/portfolioData';
                                     <div className="interface_img">    
                                         <center>
                                             <Image
-                                            src={`/../public/${img.name}`}
+                                            src={`/${img.name}`}
                                             alt="sample img"
                                             width={img.width}
                                             height={img.height}
@@ -77,7 +77,7 @@ import { portfolioData } from '../../portfolioData/portfolioData';
         <Head>
             <title>Adamedia Design - {project} </title>
             <meta name='description' content='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'/>
-            <link rel="icon" href="/../favicon.ico" />
+            <link rel="icon" href="/favicon.ico" />
         </Head>
 
 

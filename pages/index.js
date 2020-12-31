@@ -69,7 +69,7 @@ import Link from 'next/link'
 
                     <div className='image'>
                     <Image
-                          src="/../public/projects-icon.png"
+                          src="/projects-icon.png"
                           alt="Picture of the author"
                           width={400}
                           height={170}
@@ -88,7 +88,7 @@ import Link from 'next/link'
 
                     <div className='image'>
                     <Image
-                        src="/../public/about-me-icon.png"
+                        src="/about-me-icon.png"
                         alt="Picture of the author"
                         width={400}
                         height={250}
@@ -106,7 +106,7 @@ import Link from 'next/link'
 
                   <div className='image'>
                         <Image
-                        src="/../public/video_production_icon.png"
+                        src="/video_production_icon.png"
                         alt="Picture of the author"
                         width={400}
                         height={200}

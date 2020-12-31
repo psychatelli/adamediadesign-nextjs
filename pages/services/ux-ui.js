@@ -10,7 +10,7 @@ import Link from 'next/link'
         <Head>
             <title>Adamedia Design - UX/UI Design & Development </title>
             <meta name='description' content='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'/>
-            <link rel="icon" href="/../favicon.ico" />
+            <link rel="icon" href="/favicon.ico" />
         </Head>
 
            <div className="primaryBlue-banner">
@@ -37,7 +37,7 @@ import Link from 'next/link'
                                     <Link href='/portfolio/logistics-software'>
                                         <a> 
                                             <Image
-                                            src="/../public/mobile-interfaces.png"
+                                            src="/mobile-interfaces.png"
                                             alt="Picture of the author"
                                             width={1200}
                                             height={450}
@@ -67,7 +67,7 @@ import Link from 'next/link'
                                             <Link href='/portfolio/logistics-app'>
                                                 <a> 
                                                 <Image
-                                                src="/../public/wwo_app_1.png"
+                                                src="/wwo_app_1.png"
                                                 alt="mobile project"
                                                 width={500}
                                                 height={1000}
@@ -96,7 +96,7 @@ import Link from 'next/link'
                                     <Link href='/portfolio/food-networking-app'>
                                         <a> 
                                         <Image
-                                            src="/../public/knowFoodScreen1.png"
+                                            src="/knowFoodScreen1.png"
                                             alt="Picture of the author"
                                             width={500}
                                             height={1000}
@@ -125,7 +125,7 @@ import Link from 'next/link'
                                             <Link href='/portfolio/dashboard'>
                                                 <a> 
                                                 <Image
-                                                src="/../public/dashboard.png"
+                                                src="/dashboard.png"
                                                 alt="Picture of the author"
                                                 width={500}
                                                 height={500}
@@ -149,7 +149,7 @@ import Link from 'next/link'
                                             <Link href='/portfolio/genepullsite'>
                                                 <a> 
                                                 <Image
-                                                    src="/../public/genepullHome.png"
+                                                    src="/genepullHome.png"
                                                     alt="Picture of the author"
                                                     width={500}
                                                     height={500}
@@ -175,7 +175,7 @@ import Link from 'next/link'
                                             <Link href='/portfolio/bi-floors'>
                                                 <a> 
                                                 <Image
-                                                    src="/../public/bi-website.png"
+                                                    src="/bi-website.png"
                                                     alt="Picture of the author"
                                                     width={500}
                                                     height={500}

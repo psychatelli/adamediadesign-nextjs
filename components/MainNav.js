@@ -54,7 +54,7 @@ const MainNav = () => {
                 <Link href="/">
                     <a> 
                         <Image
-                            src="/../public/Adamedia-Design-Logo.png"
+                            src="/Adamedia-Design-Logo.png"
                             alt="brand logo"
                             width={35}
                             height={35}

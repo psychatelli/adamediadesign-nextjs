@@ -1,13 +1,9 @@
 {
   "/_app": "pages/_app.js",
-  "/about": "pages/about.html",
-  "/api/hello": "pages/api/hello.js",
-  "/contact": "pages/contact.html",
-  "/": "pages/index.html",
-  "/portfolio/[project]": "pages/portfolio/[project].html",
-  "/services/ux-ui": "pages/services/ux-ui.html",
-  "/services/videos": "pages/services/videos.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
+  "/": "pages/index.js",
+  "/services/ux-ui": "pages/services/ux-ui.js",
+  "/portfolio/[project]": "pages/portfolio/[project].js"
 }

@@ -10,7 +10,12 @@ module.exports = withPlugins([
         optimizeImagesInDev: true
       }
     ],
-    [withImages]
+    [withImages],
+    {
+      images: {
+        domains: ['adamediadesign-nextjs.vercel.app'],
+      },
+    }
   ]);
 
 

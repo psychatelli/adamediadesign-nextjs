@@ -35,6 +35,7 @@ import Link from 'next/link'
                     width={100}
                     height={100}
                     />
+
                   </div>
                   
                 </center>

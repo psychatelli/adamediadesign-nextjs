@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import {useRouter} from 'next/router'
 import Image from 'next/image'
 import Button from '@material-ui/core/Button';
@@ -11,8 +12,8 @@ import { portfolioData } from '../../portfolioData/portfolioData';
     const router = useRouter()
     const project = router.query.project;
 
-    
-
+   
+   
     const showContent = () => {
         const selected = portfolioData.filter(item => item.id === project);
 
@@ -70,9 +71,16 @@ import { portfolioData } from '../../portfolioData/portfolioData';
     }
    
   
-  
     return (
         <div className='porject'>
+
+        <Head>
+            <title>Adamedia Design - {project} </title>
+            <meta name='description' content='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'/>
+            <link rel="icon" href="/../favicon.ico" />
+        </Head>
+
+
             {showContent()}
         </div>
     )

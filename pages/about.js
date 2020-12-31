@@ -1,9 +1,16 @@
 import React from 'react'
+import Head from 'next/head'
 
  const About = () => {
     return (
         <div className='about'>
      
+        <Head>
+            <title>Adamedia Design - About </title>
+            <meta name='description' content='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'/>
+            <link rel="icon" href="/../favicon.ico" />
+        </Head>
+
         <div className="primaryBlue-banner">
             <h1>ADAM DONATELLI</h1>
             <h3> SOFTWARE DEVELOPER & DESIGN </h3>

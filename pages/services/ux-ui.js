@@ -1,10 +1,17 @@
 import React from 'react'
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
  const UXUI = () => {
     return (
         <div className='uxui'>
+
+        <Head>
+            <title>Adamedia Design - UX/UI Design & Development </title>
+            <meta name='description' content='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'/>
+            <link rel="icon" href="/../favicon.ico" />
+        </Head>
 
            <div className="primaryBlue-banner">
                 <div className='customHeader'>UI DEVELOPMENT & DESIGN</div>

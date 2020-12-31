@@ -12,22 +12,20 @@ import Link from 'next/link'
   return (
     <div className='home'>
       <Head>
-        <title>Create Next App</title>
+        <title>Adamedia Design - Home </title>
+        <meta name='description' content='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
      
     <div className='firstRowWrapper'>
-
           <div className="homeBanner" 
             style={{
-              backgroundImage: "url(" + `${require("../public/home-bnr-1200.gif")}` + ")",
               width: "100%",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover"
             }}
             >
-
             <div class="bannerContent">
                 <center>
                   <div className='bannerLogo'>

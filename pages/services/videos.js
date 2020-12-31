@@ -1,8 +1,17 @@
 import React from 'react'
+import Head from 'next/head'
 
  const Videos = () => {
+
+
     return (
         <div className='videos dark-gray'>
+
+        <Head>
+            <title>Adamedia Design - Videos </title>
+            <meta name='description' content='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'/>
+            <link rel="icon" href="/../favicon.ico" />
+        </Head>
 
             <div className="lightGray-banner">
                 <h1>VIDEOS</h1>

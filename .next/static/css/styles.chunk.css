@@ -28,7 +28,11 @@
   .home .homeBanner {
     display: flex;
     justify-content: center;
-    height: 50%; }
+    height: 50%;
+    width: 100%;
+    background-image: url(/_next/static/images/home-bnr-1200-aaea23e2b9d93b658c36e363c2381968.png);
+    background-size: 100%;
+    background-repeat: no-repeat; }
   .home .bannerContent {
     margin-top: 5%;
     font-weight: 500; }

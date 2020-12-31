@@ -11,11 +11,11 @@ module.exports = withPlugins([
       }
     ],
     [withImages],
-    {
-      images: {
-        domains: ['adamediadesign-nextjs.vercel.app'],
-      },
-    }
+    // {
+    //   images: {
+    //     domains: ['https://adamediadesign-nextjs.vercel.app'],
+    //   },
+    // }
   ]);
 
 

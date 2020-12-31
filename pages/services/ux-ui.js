@@ -41,6 +41,7 @@ import Link from 'next/link'
                                             alt="Picture of the author"
                                             width={1200}
                                             height={450}
+                                            priority={true}
                                             />
                                         </a>
                                     </Link>

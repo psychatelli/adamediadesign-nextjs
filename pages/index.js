@@ -30,12 +30,12 @@ import Link from 'next/link'
                 <center>
                   <div className='bannerLogo'>
                     <Image
-                    src="/../public/Adamedia-Design-Logo.png"
+                    src="/Adamedia-Design-Logo.png"
                     alt="Picture of the author"
                     width={100}
                     height={100}
+                    priority={true}
                     />
-
                   </div>
                   
                 </center>
@@ -73,6 +73,7 @@ import Link from 'next/link'
                           alt="Picture of the author"
                           width={400}
                           height={170}
+                          priority={true}
                           />
                     </div>  
                 </div>
@@ -91,6 +92,7 @@ import Link from 'next/link'
                         alt="Picture of the author"
                         width={400}
                         height={250}
+                        priority={true}
                         />
                     </div>
                 </div> 
@@ -108,6 +110,7 @@ import Link from 'next/link'
                         alt="Picture of the author"
                         width={400}
                         height={200}
+                        priority={true}
                         />
                   </div>
               </div>

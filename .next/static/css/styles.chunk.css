@@ -235,6 +235,26 @@
       margin-bottom: 10px;
       color: aqua; }
 
+.products {
+  display: flex;
+  flex-direction: column; }
+  .products .productsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 100%;
+    padding: 0px; }
+  .products .productBox {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 350px;
+    margin: 10px 0px; }
+    .products .productBox .title {
+      margin-bottom: 10px;
+      color: aqua; }
+
 .footer {
   background: black;
   width: 100%;
@@ -541,7 +561,7 @@ p {
 * {
   box-sizing: border-box; }
 
-.contentAreaShared, .about .contentArea, .contact .contentArea, .porject .contentAreaDestop, .porject .contentAreaMobile, .uxui .contentArea, .uxui .uxuiContentArea, .videos .contentArea {
+.contentAreaShared, .about .contentArea, .contact .contentArea, .porject .contentAreaDestop, .porject .contentAreaMobile, .uxui .contentArea, .uxui .uxuiContentArea, .videos .contentArea, .products .contentArea {
   width: 100%;
   padding: 10px;
   margin: 10px auto; }

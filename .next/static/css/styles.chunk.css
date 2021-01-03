@@ -255,6 +255,14 @@
       margin-bottom: 10px;
       color: aqua; }
 
+.product .title {
+  text-transform: uppercase; }
+
+.product .titlePrice {
+  display: flex; }
+  .product .titlePrice p {
+    margin: 0px 5px !important; }
+
 .footer {
   background: black;
   width: 100%;
@@ -561,7 +569,7 @@ p {
 * {
   box-sizing: border-box; }
 
-.contentAreaShared, .about .contentArea, .contact .contentArea, .porject .contentAreaDestop, .porject .contentAreaMobile, .uxui .contentArea, .uxui .uxuiContentArea, .videos .contentArea, .products .contentArea {
+.contentAreaShared, .about .contentArea, .contact .contentArea, .porject .contentAreaDestop, .porject .contentAreaMobile, .uxui .contentArea, .uxui .uxuiContentArea, .videos .contentArea, .products .contentArea, .product .contentArea {
   width: 100%;
   padding: 10px;
   margin: 10px auto; }

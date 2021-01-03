@@ -1,0 +1,33 @@
+.products {
+    display: flex;
+    flex-direction: column;
+
+
+    .contentArea {
+        @extend .contentAreaShared;
+    }
+
+
+    .productsContainer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        width: 100%;
+        padding: 0px;
+    }
+    .productBox {
+
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        height: 350px;
+        margin: 10px 0px;
+       
+        .title {
+            margin-bottom: 10px;
+            color: aqua;
+        }
+      
+    }
+}

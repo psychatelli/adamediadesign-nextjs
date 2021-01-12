@@ -1,13 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import Head from 'next/head'
-import { fromImageToUrl, API_URL } from '../../utils/urls';
-import { twoDecimals } from '../../utils/format';
-
+import { fromImageToUrl, API_URL } from '../../utils/urls'
+import { twoDecimals } from '../../utils/format'
+import BuyButton from '../../components/BuyButton'
 
 
  const Product = ({ product }) => {
-
 
     return (
         <div className='product'>
@@ -35,6 +34,7 @@ import { twoDecimals } from '../../utils/format';
                 </div>
 
                 <p>{product.content}</p>
+                <BuyButton product={product}/>
             </div>
         </div>
     )

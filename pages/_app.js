@@ -4,6 +4,7 @@ import MainNav from '../components/MainNav';
 import Footer from '../components/Footer';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '../src/theme';
+import {AuthProvider} from '../context/AuthContext';
 
 
 function MyApp({ Component, pageProps }) {
@@ -18,13 +19,13 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ThemeProvider theme={theme}>
-
-  <content>
-
-    <MainNav/>
-      <Component {...pageProps} />
-      <Footer/>
-  </content>
+      <AuthProvider>
+          <content>
+            <MainNav/>
+              <Component {...pageProps} />
+              <Footer/>
+          </content>
+        </AuthProvider>
   </ThemeProvider>
   )
 }

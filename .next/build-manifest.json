@@ -26,15 +26,15 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/products/[slug]": [
+    "/account": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/products/[slug].js"
+      "static/chunks/pages/account.js"
     ],
-    "/services/ux-ui": [
+    "/success": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/services/ux-ui.js"
+      "static/chunks/pages/success.js"
     ]
   },
   "ampFirstPages": []

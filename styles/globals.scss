@@ -9,12 +9,16 @@
 @import "./scss/pages/videos.scss";
 @import "./scss/pages/products.scss";
 @import "./scss/pages/product.scss";
-@import "./scss/footer.scss";
-@import './scss/mainNav.scss';
+@import "./scss/pages/account.scss";
+@import "./scss/pages/login.scss";
+@import "./scss/pages/account.scss";
+@import "./scss/components/footer.scss"; 
+@import './scss/components/mainNav.scss';
 @import "./scss/banners";
 @import "./scss/media";
+@import "./scss/components/buyButton.scss";
 @import "./scss/hover_img_effect";
-@import "./scss/skills.scss";
+@import "./scss/components/skills.scss";
 
 
 html,

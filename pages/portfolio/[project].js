@@ -12,8 +12,6 @@ import { portfolioData } from '../../portfolioData/portfolioData';
     const router = useRouter()
     const project = router.query.project;
 
-   
-   
     const showContent = () => {
         const selected = portfolioData.filter(item => item.id === project);
 
@@ -58,8 +56,6 @@ import { portfolioData } from '../../portfolioData/portfolioData';
                 
                     <p>{item.description}</p>
                 </div> 
-
-
             </div>
             })
             return content;

@@ -263,6 +263,60 @@
   .product .titlePrice p {
     margin: 0px 5px !important; }
 
+.account {
+  display: flex;
+  flex-direction: column; }
+  .account .orders {
+    display: flex;
+    justify-content: space-evenly; }
+
+.login {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center; }
+  .login .loginContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 400px;
+    background: #1a1919;
+    border-radius: 10px; }
+  .login .logoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; }
+  .login .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px 30px 10px;
+    width: 100%; }
+    .login .input input {
+      background: none;
+      padding: 10px;
+      width: 100%;
+      color: white;
+      border-style: solid;
+      margin-bottom: 10px; }
+    .login .input input::placeholder {
+      color: aqua; }
+    .login .input input:focus {
+      outline: none; }
+  .login .loginButton {
+    display: flex; }
+    .login .loginButton .MuiButtonBase-root {
+      background: aqua; }
+
+.account {
+  display: flex;
+  flex-direction: column; }
+  .account .orders {
+    display: flex;
+    justify-content: space-evenly; }
+
 .footer {
   background: black;
   width: 100%;
@@ -448,6 +502,12 @@
   /* Styles */ }
 
 /* END THE NEW */
+.buyButton .button {
+  background: aqua;
+  color: gray;
+  padding: 10px 20px;
+  border-radius: 5px; }
+
 #container, #container2 {
   perspective: 30px; }
 
@@ -569,7 +629,7 @@ p {
 * {
   box-sizing: border-box; }
 
-.contentAreaShared, .about .contentArea, .contact .contentArea, .porject .contentAreaDestop, .porject .contentAreaMobile, .uxui .contentArea, .uxui .uxuiContentArea, .videos .contentArea, .products .contentArea, .product .contentArea {
+.contentAreaShared, .about .contentArea, .contact .contentArea, .porject .contentAreaDestop, .porject .contentAreaMobile, .uxui .contentArea, .uxui .uxuiContentArea, .videos .contentArea, .products .contentArea, .product .contentArea, .account {
   width: 100%;
   padding: 10px;
   margin: 10px auto; }

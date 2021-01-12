@@ -1,5 +1,6 @@
 
-import  React, { useState} from 'react'
+import  React, { useState, useContext } from 'react'
+import AuthContext from '../context/AuthContext'
 import Link from 'next/link'
 import Image from 'next/image'
 import { makeStyles } from '@material-ui/core/styles';
@@ -9,14 +10,13 @@ import List from '@material-ui/core/List';
 import ListItemText from '@material-ui/core/ListItemText';
 import Button from '@material-ui/core/Button';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
+import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import ContactlessIcon from '@material-ui/icons/Contactless';
 import HomeIcon from '@material-ui/icons/Home';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import WebIcon from '@material-ui/icons/Web';
 import MenuIcon from '@material-ui/icons/Menu';
-
-
 
 const useStyles = makeStyles({
     list: {
@@ -28,25 +28,23 @@ const useStyles = makeStyles({
     },
   });
 
-
-const MainNav = () => {
-
+  const MainNav = () => {
     const classes = useStyles();
-  const [state, setState] = useState({
-    top: false,
-    left: false,
-    bottom: false,
-    right: false,
-  });
-
+    const [state, setState] = useState({
+        top: false,
+        left: false,
+        bottom: false,
+        right: false,
+    });
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
-
     setState({ ...state, [anchor]: open });
   };
+
+    const { user } = useContext(AuthContext)
 
     return (
         <div className='MainNav'>
@@ -122,6 +120,30 @@ const MainNav = () => {
                             </ListItem>
                         </a>
                     </Link>
+
+                    <div className='navAuth'>
+                        {user ? (
+                            <Link href="/account">
+                                <a>
+                                    <ListItem button onClick={toggleDrawer('left', false)}>
+                                            <ListItemIcon><PermIdentityIcon/> </ListItemIcon>
+                                            <ListItemText  primary={user.email} style={{color: 'black'}}/>
+                                    </ListItem>
+                                </a>
+                            </Link>
+
+                        ) : (
+                             <Link href="/login">
+                             <a>
+                                 <ListItem button onClick={toggleDrawer('left', false)}>
+                                         <ListItemIcon><PermIdentityIcon/> </ListItemIcon>
+                                         <ListItemText  primary='Login' style={{color: 'black'}}/>
+                                 </ListItem>
+                             </a>
+                         </Link>
+                         )
+                        }
+                    </div>
 
                 </List>
             </div>

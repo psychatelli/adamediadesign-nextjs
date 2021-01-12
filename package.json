@@ -11,10 +11,12 @@
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",
+    "@stripe/stripe-js": "^1.11.0",
     "@zeit/next-sass": "^1.0.1",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^8.0.0",
+    "magic-sdk": "^4.0.2",
     "next": "10.0.3",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.6.2",

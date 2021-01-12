@@ -1,0 +1,10 @@
+.account {
+    display: flex;
+    flex-direction: column;
+    @extend .contentAreaShared;
+
+    .orders {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,57 @@
+.login {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+
+
+    .loginContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 350px;
+        height: 400px;
+        background: rgb(26, 25, 25);
+        border-radius: 10px;
+    }
+
+    .logoBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 10px 30px 10px;
+        width: 100%;
+        input {
+            background: none;
+            padding: 10px;
+            width: 100%;
+            color: white;
+            border-style: solid;
+            margin-bottom: 10px;
+        }
+   
+       input::placeholder{
+            color: aqua
+        }
+        input:focus{
+            outline: none;
+        } 
+      
+    }
+
+
+    .loginButton {
+        display: flex;
+    
+        .MuiButtonBase-root {
+            background: aqua;
+        }
+    }
+}

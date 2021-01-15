@@ -8,6 +8,7 @@ import BuyButton from '../../components/BuyButton'
 
  const Product = ({ product }) => {
 
+    console.log(product)
     return (
         <div className='product'>
              <Head>

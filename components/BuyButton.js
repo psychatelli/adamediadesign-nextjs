@@ -5,7 +5,7 @@ import AuthContext from '../context/AuthContext'
 import { STRIPE_PK, API_URL } from '../utils/urls'
 
 
- const stripePromise = loadStripe(STRIPE_PK)
+const stripePromise = loadStripe(STRIPE_PK)
 
 const BuyButton = ({ product }) => {
 

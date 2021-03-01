@@ -31,10 +31,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/portfolio/[project]": [
+    "/services/videos": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/portfolio/[project].js"
+      "static/chunks/pages/services/videos.js"
     ]
   },
   "ampFirstPages": []

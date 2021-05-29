@@ -54,6 +54,9 @@ export async function getStaticProps({ params: { slug } }) {
 
 
 
+
+
+
 export async function getStaticPaths() {
     //Retrieve all the possible paths
     const products_res = await fetch(`${API_URL}/products/`)

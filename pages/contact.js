@@ -1,5 +1,5 @@
 import React from 'react'
-import Head from 'next/head'
+import PageHead from '../components/head'
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
 
@@ -7,12 +7,11 @@ import PhoneIcon from '@material-ui/icons/Phone';
     return (
         <div className='contact'>
 
-        <Head>
-            <title>Adamedia Design - Contact </title>
-            <meta name='description' content='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'/>
-            <link rel="icon" href="/../favicon.ico" />
-        </Head>
-
+        <PageHead
+        title='Adamedia Design - Contact'
+        description='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'
+        />
+      
             <div className="primaryBlue-banner">
                 <h1>CONTACT</h1>
                 <h3>PHONE | EMAIL</h3>

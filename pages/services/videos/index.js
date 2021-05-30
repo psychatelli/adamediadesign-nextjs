@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-
-import Head from 'next/head'
+import PageHead from '../../../components/head'
 
  const Videos = () => {
 
@@ -9,11 +8,10 @@ import Head from 'next/head'
     return (
         <div className='videos dark-gray'>
 
-        <Head>
-            <title>Adamedia Design - Videos </title>
-            <meta name='description' content='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'/>
-            <link rel="icon" href="/../favicon.ico" />
-        </Head>
+        <PageHead
+            title='Adamedia Design - Videos'
+            description='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'
+        />
 
             <div className="lightGray-banner">
                 <h1>VIDEOS</h1>

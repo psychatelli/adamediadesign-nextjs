@@ -1,8 +1,10 @@
 import React from 'react'
-import Head from 'next/head'
-import PriceBox from '../../../components/priceBox';
-import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
-import VideocamIcon from '@material-ui/icons/Videocam';
+import PageHead from '../../../components/head'
+import PriceBox from '../../../components/priceBox'
+import PhotoCameraIcon from '@material-ui/icons/PhotoCamera'
+import VideocamIcon from '@material-ui/icons/Videocam'
+
+
  const RealEstatePhotography = () => {
 
 
@@ -17,11 +19,10 @@ import VideocamIcon from '@material-ui/icons/Videocam';
 
         <div className='videos'>
 
-        <Head>
-            <title>Adamedia Design - Real Estate Photography </title>
-            <meta name='description' content='Real estate photography - photos, videos, drone shots'/>
-            <link rel="icon" href="/../favicon.ico" />
-        </Head>
+        <PageHead
+        title='Adamedia Design - Real Estate Photography Tampa FL'
+        description='Real estate photography - photos, videos, drone shots'
+        />
 
             <div className="lightGray-banner">
                 <h1>REAL ESTATE PHOTOGRAPHY</h1>
@@ -32,22 +33,30 @@ import VideocamIcon from '@material-ui/icons/Videocam';
             <div className="contentArea">
                 <div className="service-desription">
                 
-                
-                    <p>
-                    <PhotoCameraIcon/> <br/>
-                    All photo packages include 15-30 photos. This includes both exterior and interior of proptery. If a property requires more photos, we will accommodate. 
-                    </p>
-                    <br/>
-                    <p>
-                    <VideocamIcon/><br/>Video package includes complete tour of interior and exterior.  Drone footage is included.</p>
+                    <div className='serviceDescriptionBox'>
+                            <div className='iconContainer'>  
+                            <PhotoCameraIcon/> 
+                            </div>
+
+                            <div className='description'>
+                            Photo package includes both exterior and interior of proptery. No set number on number of photos delivered, whatever gets the job done.
+                            </div>
+                    </div>
+
+                    <div className='serviceDescriptionBox'>
+                            <div className='iconContainer'>  
+                            <VideocamIcon/>
+                            </div>
+
+                            <div className='description'>
+                            Drone footage is included. Video package includes complete tour of interior and exterior.  
+                            </div>
+                    </div>
                 </div>
 
            
             <div className='realEstateWrapper'> 
-            
-           
-            {priceBoxes}
-
+                 {priceBoxes}
             </div>
             </div>
         </div>

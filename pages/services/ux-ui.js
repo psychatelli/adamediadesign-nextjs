@@ -1,5 +1,5 @@
 import React from 'react'
-import Head from 'next/head'
+import PageHead from '../../components/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -7,11 +7,11 @@ import Link from 'next/link'
     return (
         <div className='uxui'>
 
-        <Head>
-            <title>Adamedia Design - UX/UI Design & Development </title>
-            <meta name='description' content='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'/>
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
+        <PageHead
+        title='Adamedia Design - UX/UI Design & Development '
+        description='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'
+        />
+       
 
            <div className="primaryBlue-banner">
                 <div className='customHeader'>UI DEVELOPMENT & DESIGN</div>

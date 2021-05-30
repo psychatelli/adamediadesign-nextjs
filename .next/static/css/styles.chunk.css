@@ -24,7 +24,8 @@
   display: flex;
   flex-direction: column; }
   .home .firstRowWrapper {
-    height: 95vh; }
+    height: 95vh;
+    margin-bottom: 20px; }
   .home .homeBanner {
     display: flex;
     justify-content: center;
@@ -32,7 +33,8 @@
     width: 100%;
     background-image: url(/_next/static/images/home-bnr-1200-aaea23e2b9d93b658c36e363c2381968.png);
     background-size: 100%;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-bottom: 10px; }
   .home .bannerContent {
     margin-top: 5%;
     font-weight: 500; }
@@ -60,8 +62,7 @@
     justify-content: space-evenly;
     align-items: center;
     height: 50%;
-    width: 100%;
-    border-top: solid 2px #333333; }
+    width: 100%; }
   .home .hover-box-2 {
     display: flex;
     flex-direction: column;
@@ -69,7 +70,7 @@
     background: #252525;
     opacity: 0.60;
     width: 30%;
-    height: 310px; }
+    height: 280px; }
     .home .hover-box-2 .title {
       display: flex;
       align-items: center;
@@ -87,7 +88,8 @@
       display: flex;
       justify-content: center;
       width: 100%;
-      height: 75%; }
+      height: 70%;
+      position: relative; }
   .home .hover-box-2:hover {
     opacity: 1.0;
     cursor: pointer !important; }
@@ -254,6 +256,15 @@
   width: 100%;
   max-width: 1300px;
   margin: 0px auto; }
+
+.serviceDescriptionBox {
+  display: flex;
+  margin-bottom: 20px; }
+  .serviceDescriptionBox .iconContainer {
+    margin-right: 30px; }
+    .serviceDescriptionBox .iconContainer .MuiSvgIcon-root {
+      color: gray;
+      font-size: 25px; }
 
 @media only screen and (min-width: 50px) and (max-width: 850px) {
   .realEstateWrapper {

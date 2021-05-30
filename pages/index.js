@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import PageHead from '../components/head'
 import Image from 'next/image'
 import Skills from '../components/Skills';
 import Link from 'next/link'
@@ -11,13 +11,11 @@ import Link from 'next/link'
 
   return (
     <div className='home'>
-      <Head>
-        <title>Adamedia Design - Home </title>
-        <meta name='description' content='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'/>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-     
+      <PageHead
+      title='Adamedia Design - Home'
+      description='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'
+      />
+  
     <div className='firstRowWrapper'>
           <div className="homeBanner" 
             style={{
@@ -49,19 +47,16 @@ import Link from 'next/link'
             </div> 
           </div>
 
-
-
-     
           <div className="NavRow"
             style={{
             backgroundImage: "url(" + `${require("../public/NavRowBackground.png")}` + ")",
             width: "100%",
             backgroundRepeat: "no-repeat",
-            backgroundSize: "cover"
+            backgroundSize: "cover",
           }}
           >
 
-        <Link href="/services/ux-ui">
+          <Link href="/services/ux-ui">
                 <div className="hover-box-2">
                     <div className="title">
                       <h4>SOFTWARE | WEB PROJECTS</h4>
@@ -70,9 +65,9 @@ import Link from 'next/link'
                     <div className='image'>
                     <Image
                           src="/projects-icon.png"
-                          alt="Picture of the author"
-                          width={400}
-                          height={170}
+                          alt="death star"
+                          layout={'fill'} 
+                          objectFit={'contain'}
                           priority={true}
                           />
                     </div>  
@@ -90,8 +85,8 @@ import Link from 'next/link'
                     <Image
                         src="/about-me-icon.png"
                         alt="Picture of the author"
-                        width={400}
-                        height={250}
+                        layout={'fill'} 
+                          objectFit={'contain'}
                         priority={true}
                         />
                     </div>
@@ -108,8 +103,8 @@ import Link from 'next/link'
                         <Image
                         src="/video_production_icon.png"
                         alt="Picture of the author"
-                        width={400}
-                        height={200}
+                        layout={'fill'} 
+                        objectFit={'contain'}
                         priority={true}
                         />
                   </div>

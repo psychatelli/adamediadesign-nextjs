@@ -9,6 +9,23 @@
 
 }
 
+.serviceDescriptionBox {
+    display: flex;
+    margin-bottom: 20px;
+    .iconContainer {
+        margin-right: 30px;
+        .MuiSvgIcon-root {
+            color: gray;
+            font-size: 25px;
+        }
+
+    }
+    .description {
+
+    }
+}
+
+
 
 
 @media only screen and (min-width: 50px) and (max-width: 850px) {

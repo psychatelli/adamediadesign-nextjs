@@ -9,7 +9,7 @@ const PriceBox = ({mainTitle, photoPrice, videoPrice, }) => {
                 <HomeIcon/>
                 <div className='priceBoxCell'> {mainTitle} </div>
             </div>
-
+  
         <div className='PriceBoxDetailsWrapper'>
                     <div className='PriceBoxColumn rightBorder'>
                         <div className='priceBoxCell serviceTitle'> 

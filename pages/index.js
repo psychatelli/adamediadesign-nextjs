@@ -15,6 +15,7 @@ import Link from 'next/link'
       title='Adamedia Design - Home'
       description='Software, Apps, videos, and media design. Adam Donatelli services and portfolio'
       />
+
   
     <div className='firstRowWrapper'>
           <div className="homeBanner" 

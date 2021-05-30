@@ -17,7 +17,7 @@ import VideocamIcon from '@material-ui/icons/Videocam'
     })
     return (
 
-        <div className='videos'>
+        <div className='realEstatePhotography'>
 
         <PageHead
         title='Adamedia Design - Real Estate Photography Tampa FL'
@@ -55,7 +55,7 @@ import VideocamIcon from '@material-ui/icons/Videocam'
                 </div>
 
            
-            <div className='realEstateWrapper'> 
+            <div className='realEstatePriceboxWrapper'> 
                  {priceBoxes}
             </div>
             </div>

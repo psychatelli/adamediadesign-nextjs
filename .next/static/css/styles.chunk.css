@@ -250,26 +250,38 @@
       border: solid thin black;
       cursor: pointer; }
 
-.realEstateWrapper {
+.realEstatePhotography .realEstatePriceboxWrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 1300px;
   margin: 0px auto; }
 
-.serviceDescriptionBox {
+.realEstatePhotography .contentArea, .realEstatePhotography .uxui .uxuiContentArea, .uxui .realEstatePhotography .uxuiContentArea {
+  padding: 20px; }
+
+.realEstatePhotography .serviceDescriptionBox {
   display: flex;
-  margin-bottom: 20px; }
-  .serviceDescriptionBox .iconContainer {
+  margin-bottom: 20px;
+  align-items: center; }
+  .realEstatePhotography .serviceDescriptionBox .iconContainer {
     margin-right: 30px; }
-    .serviceDescriptionBox .iconContainer .MuiSvgIcon-root {
+    .realEstatePhotography .serviceDescriptionBox .iconContainer .MuiSvgIcon-root {
       color: gray;
       font-size: 25px; }
 
 @media only screen and (min-width: 50px) and (max-width: 850px) {
-  .realEstateWrapper {
+  .realEstatePhotography .realEstatePriceboxWrapper {
     flex-direction: column;
     align-items: center; } }
+
+@media only screen and (min-width: 50px) and (max-width: 690px) {
+  .realEstatePhotography .contentArea, .realEstatePhotography .uxui .uxuiContentArea, .uxui .realEstatePhotography .uxuiContentArea {
+    padding: 10px; }
+  .realEstatePhotography .lightGray-banner h1 {
+    font-size: 30px !important; }
+  .realEstatePhotography .priceBox {
+    width: 100%; } }
 
 .footer {
   background: black;

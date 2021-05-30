@@ -7,13 +7,14 @@
 @import "./scss/pages/project.scss";
 @import "./scss/pages/uxuiHome.scss";
 @import "./scss/pages/videos.scss";
+@import "./scss/pages/realEstate.scss";
 @import "./scss/footer.scss";
 @import './scss/mainNav.scss';
 @import "./scss/banners";
 @import "./scss/media";
 @import "./scss/hover_img_effect";
 @import "./scss/skills.scss";
-
+@import "./scss/priceBox.scss";
 
 html,
 body {
@@ -44,14 +45,8 @@ body {
 
 }
 
-.section-wrapper {
-    width: 95%;
-    margin: 10px auto;
-
-    .service-desription {
-        line-height: 1.5;
-        font-size: 20px;
-    }
+.service-desription {
+    margin: 20px;
 }
 
 // IMPORTED STYLES

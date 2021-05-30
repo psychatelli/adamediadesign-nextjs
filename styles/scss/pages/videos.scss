@@ -31,4 +31,24 @@
         }
       
     }
+
+    .videoServiceNav {
+        display: flex;
+        margin: 20px;
+        
+        .videoServiceNavItem{
+            border: solid thin white;
+            padding: 10px;
+            color: white;
+            margin-right: 20px;
+        }
+
+        :hover {
+            background: aqua;
+            color: black;
+            border: solid thin black;
+            cursor: pointer;
+
+        }
+    }
 }

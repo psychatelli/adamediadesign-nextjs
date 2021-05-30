@@ -39,7 +39,7 @@ import VideocamIcon from '@material-ui/icons/Videocam'
                             </div>
 
                             <div className='description'>
-                            Photo package includes both exterior and interior of proptery. No set number on number of photos delivered, whatever gets the job done.
+                            Photo package includes both exterior and interior of property. No set number on number of photos delivered, whatever gets the job done.
                             </div>
                     </div>
 

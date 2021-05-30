@@ -1,0 +1,19 @@
+
+
+.realEstateWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0px auto;
+
+}
+
+
+
+@media only screen and (min-width: 50px) and (max-width: 850px) {
+    .realEstateWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}

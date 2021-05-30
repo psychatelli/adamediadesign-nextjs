@@ -234,6 +234,31 @@
     .videos .videoBox .title {
       margin-bottom: 10px;
       color: aqua; }
+  .videos .videoServiceNav {
+    display: flex;
+    margin: 20px; }
+    .videos .videoServiceNav .videoServiceNavItem {
+      border: solid thin white;
+      padding: 10px;
+      color: white;
+      margin-right: 20px; }
+    .videos .videoServiceNav :hover {
+      background: aqua;
+      color: black;
+      border: solid thin black;
+      cursor: pointer; }
+
+.realEstateWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0px auto; }
+
+@media only screen and (min-width: 50px) and (max-width: 850px) {
+  .realEstateWrapper {
+    flex-direction: column;
+    align-items: center; } }
 
 .footer {
   background: black;
@@ -524,6 +549,55 @@
     transform: none;
     visibility: visible; }
 
+.priceBox {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 10px;
+  background: #929292; }
+
+.PriceBoxRow {
+  display: flex;
+  width: 100%;
+  border-bottom: solid thin #aaa9a6; }
+  .PriceBoxRow.mainTitleSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    padding: 15px;
+    background: #282828;
+    color: white; }
+
+.priceBoxCell {
+  width: 100%;
+  text-align: center;
+  padding: 10px; }
+  .priceBoxCell.serviceTitle {
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #252525;
+    height: 70px; }
+    .priceBoxCell.serviceTitle .MuiSvgIcon-root {
+      color: aqua;
+      font-size: 40px; }
+  .priceBoxCell.price {
+    font-size: 40px;
+    color: #252525; }
+
+.PriceBoxDetailsWrapper {
+  display: flex; }
+
+.PriceBoxColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 10px; }
+  .PriceBoxColumn.rightBorder {
+    border-right: solid 1px white; }
+
 html,
 body {
   padding: 0;
@@ -546,12 +620,8 @@ p {
   padding: 10px;
   margin: 10px auto; }
 
-.section-wrapper {
-  width: 95%;
-  margin: 10px auto; }
-  .section-wrapper .service-desription {
-    line-height: 1.5;
-    font-size: 20px; }
+.service-desription {
+  margin: 20px; }
 
 #main_wrapper {
   margin: 0 auto;

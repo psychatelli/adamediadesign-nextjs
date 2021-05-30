@@ -49,10 +49,11 @@
     font-size: 18px;
     font-weight: 600; }
   .home .slogan {
-    font-size: 20px;
+    font-size: 17px;
     background: rgba(128, 128, 128, 0.247);
     border: solid thin #c0bfbf;
-    padding: 10px; }
+    padding: 10px;
+    color: #474646; }
     .home .slogan span {
       color: #f8fcfc; }
   .home .whiteSpan {
@@ -117,6 +118,10 @@
     margin-bottom: 10px;
     border-left: solid thin #3d3d3d;
     padding: 10px; }
+
+@media only screen and (min-width: 50px) and (max-width: 850px) {
+  .about .description {
+    width: 100%; } }
 
 .contact {
   display: flex;

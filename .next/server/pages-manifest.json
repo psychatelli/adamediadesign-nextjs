@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/services/videos/real-estate-photography": "pages/services/videos/real-estate-photography.js",
-  "/services/ux-ui": "pages/services/ux-ui.js"
+  "/about": "pages/about.js",
+  "/": "pages/index.js"
 }

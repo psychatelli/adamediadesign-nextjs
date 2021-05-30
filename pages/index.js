@@ -41,8 +41,7 @@ import Link from 'next/link'
               <center> <div className='adamedia'>ADAMEDIA DESIGN</div> </center>
                 <center> 
                   <div className='slogan'>
-                    <span> SOFTWARE </span>  & <span> MEDIA </span>
-                    AT ITS BEST
+                   APPS, VIDEOS  &  MEDIA AT ITS BEST
                   </div>
                 </center>
             </div> 

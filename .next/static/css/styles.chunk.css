@@ -904,3 +904,13 @@ h4, h5, h6 {
 .interface_img img {
   width: 95%; }
 
+.checkoutButton {
+  background: #282828;
+  color: white;
+  padding: 7px 20px; }
+
+.checkoutButton:hover {
+  background: aqua;
+  color: #282828;
+  cursor: pointer; }
+

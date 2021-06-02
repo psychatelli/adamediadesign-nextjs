@@ -1,10 +1,11 @@
 
  
 import { loadStripe } from '@stripe/stripe-js'
- 
+import './checkoutButton.scss'
+
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PK)
  
-export default function Checkout (){
+export default function CheckoutButton ({price_id, cancelPath }){
  
     const handleClick = async (event) => {
         // Get Stripe.js instance
@@ -15,7 +16,7 @@ export default function Checkout (){
             headers: {
                 "content-type": "application/json"
             },
-            body: JSON.stringify({quantity: 1})
+            body: JSON.stringify({quantity: 1, price_id, cancelPath })
          }).then(res => res.json()) 
         // When the customer clicks on the button, redirect them to Checkout.
         const stripe = await stripePromise
@@ -27,10 +28,9 @@ export default function Checkout (){
  
     return (
         <div>
-            <h1>Checkout</h1>
-            <button role='link' onClick={handleClick}>
+            <div className='checkoutButton' role='link' onClick={handleClick}>
                 Checkout
-            </button>
+            </div>
         </div>
     )
 }

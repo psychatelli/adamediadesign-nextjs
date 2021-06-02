@@ -4,7 +4,6 @@ import PriceBox from '../../../components/priceBox'
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera'
 import VideocamIcon from '@material-ui/icons/Videocam'
 
-
  const RealEstatePhotography = () => {
 
 
@@ -13,6 +12,8 @@ import VideocamIcon from '@material-ui/icons/Videocam'
         mainTitle={item.mainTitle}
         photoPrice={item.photoPrice} 
         videoPrice={item.videoPrice}
+        price_id={item.price_id}
+        cancelPath='services/videos/real-estate-photography'
         />
     })
     return (
@@ -71,16 +72,27 @@ const priceBoxData = [
     {
         mainTitle: '<2500/sf',
         photoPrice: '$125',
-        videoPrice: '$200'
+        videoPrice: '$200',
+        price_id: {photos: 'price_1IxyvHD2B2kqWDmPn2I17pI2', photoVideo: 'price_1Ixyv7D2B2kqWDmP7NZiT4BX'} 
     },
     {
-        mainTitle: '2500 - 4000/sf	',
+        mainTitle: '2500 - 4000/sf',
         photoPrice: '$175',
-        videoPrice: '$250'
+        videoPrice: '$250',
+        price_id: {photos: 'price_1IxyumD2B2kqWDmPIEm7nwUt', photoVideo: 'price_1IxyuWD2B2kqWDmPpOSIVXkN'}
     },
     {
         mainTitle: '>4000/sf',
         photoPrice: '$300',
-        videoPrice: '$375'
+        videoPrice: '$375',
+        price_id: {photos: 'price_1IxyuFD2B2kqWDmPibgDyplo', photoVideo: 'price_1IxytzD2B2kqWDmPvaFbb5ur'}
+    },
+    {
+        mainTitle: 'Free',
+        photoPrice: '$1',
+        videoPrice: '$1',
+        price_id: {photos: 'price_1IxyvuD2B2kqWDmPkwXI70aV', photoVideo: 'price_1IxyvuD2B2kqWDmPkwXI70aV'}
     },
 ]
+
+

@@ -2,7 +2,10 @@ import React from 'react'
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import HomeIcon from '@material-ui/icons/Home';
-const PriceBox = ({mainTitle, photoPrice, videoPrice, }) => {
+import CheckoutButton from './CheckoutButton/checkoutButton'
+
+
+const PriceBox = ({mainTitle, photoPrice, videoPrice, price_id, cancelPath }) => {
     return (
         <div className='priceBox'>
             <div className='PriceBoxRow mainTitleSection'>
@@ -18,6 +21,7 @@ const PriceBox = ({mainTitle, photoPrice, videoPrice, }) => {
 
                         </div>
                         <div className='priceBoxCell price'> {photoPrice}</div>
+                        <CheckoutButton cancelPath={cancelPath} price_id={price_id.photos}/>
                     </div>
 
                     <div className='PriceBoxColumn'>
@@ -29,6 +33,7 @@ const PriceBox = ({mainTitle, photoPrice, videoPrice, }) => {
                         (Photos & videos)
                         </div>
                         <div className='priceBoxCell price'>{videoPrice}</div>
+                        <CheckoutButton cancelPath={cancelPath}  price_id={price_id.photoVideo}/>
                     </div>
         </div>
             

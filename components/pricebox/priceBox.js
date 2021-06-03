@@ -2,12 +2,12 @@ import React from 'react'
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import HomeIcon from '@material-ui/icons/Home';
-import CheckoutButton from './CheckoutButton/checkoutButton'
+import CheckoutButton from '../CheckoutButton/checkoutButton'
+import './priceBox.scss'
 
-
-const PriceBox = ({mainTitle, photoPrice, videoPrice, price_id, cancelPath }) => {
+const PriceBox = ({mainTitle, photoPrice, videoPrice, price_id, cancelPath, key }) => {
     return (
-        <div className='priceBox'>
+        <div className='priceBox' key={key}>
             <div className='PriceBoxRow mainTitleSection'>
                 <HomeIcon/>
                 <div className='priceBoxCell'> {mainTitle} </div>
@@ -18,7 +18,6 @@ const PriceBox = ({mainTitle, photoPrice, videoPrice, price_id, cancelPath }) =>
                         <div className='priceBoxCell serviceTitle'> 
                         <div> <PhotoCameraIcon/></div>
                         (Photos)
-
                         </div>
                         <div className='priceBoxCell price'> {photoPrice}</div>
                         <CheckoutButton cancelPath={cancelPath} price_id={price_id.photos}/>

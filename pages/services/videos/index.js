@@ -46,7 +46,15 @@ import PageHead from '../../../components/head'
       
                 
             <div className='videosContainer'>
-                
+   
+
+                <div className='videoBox'> 
+                    <div className='title'> <h3>L8 Night Flights Event</h3></div>
+                    <div className='media'> 
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/-Is107IWjAE" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
                 <div className='videoBox'> 
                     <div className='title'> <h3>SIC FIT SCOTTSDALE</h3></div>
                     <div className='media'> 
@@ -60,6 +68,17 @@ import PageHead from '../../../components/head'
                     <iframe width="100%" height="300" src="https://www.youtube.com/embed/A2q0WLyVkUg" frameborder="0" allowfullscreen=""></iframe>
                     </div>
                 </div>
+
+
+                <div className='videoBox'> 
+                    <div className='title'> <h3>Sundown Sounds Event</h3></div>
+                    <div className='media'> 
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/HqHDOlvp8FU" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+
+                
+
                 
 
                 <div className='videoBox'> 

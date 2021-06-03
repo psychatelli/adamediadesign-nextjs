@@ -1,6 +1,6 @@
 import React from 'react'
 import PageHead from '../../../components/head'
-import PriceBox from '../../../components/priceBox'
+import PriceBox from '../../../components/priceBox/priceBox'
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera'
 import VideocamIcon from '@material-ui/icons/Videocam'
 
@@ -8,13 +8,14 @@ import VideocamIcon from '@material-ui/icons/Videocam'
 
  const RealEstatePhotography = () => {
 
-    const priceBoxes = priceBoxData.map(item => {
+    const priceBoxes = priceBoxData.map((item, index) => {
         return <PriceBox 
         mainTitle={item.mainTitle}
         photoPrice={item.photoPrice} 
         videoPrice={item.videoPrice}
         price_id={item.price_id}
         cancelPath='services/videos/real-estate-photography'
+        key={index}
         />
     })
 

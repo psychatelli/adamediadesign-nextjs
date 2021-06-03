@@ -643,6 +643,12 @@ p {
 * {
   box-sizing: border-box; }
 
+.appWrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between; }
+
 .contentAreaShared, .about .contentArea, .contact .contentArea, .porject .contentAreaDestop, .porject .contentAreaMobile, .uxui .contentArea, .uxui .uxuiContentArea, .videos .contentArea {
   width: 100%;
   padding: 10px;

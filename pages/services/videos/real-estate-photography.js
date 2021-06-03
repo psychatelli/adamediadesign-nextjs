@@ -4,8 +4,9 @@ import PriceBox from '../../../components/priceBox'
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera'
 import VideocamIcon from '@material-ui/icons/Videocam'
 
- const RealEstatePhotography = () => {
 
+
+ const RealEstatePhotography = () => {
 
     const priceBoxes = priceBoxData.map(item => {
         return <PriceBox 
@@ -16,6 +17,7 @@ import VideocamIcon from '@material-ui/icons/Videocam'
         cancelPath='services/videos/real-estate-photography'
         />
     })
+
     return (
 
         <div className='realEstatePhotography'>
@@ -67,32 +69,40 @@ import VideocamIcon from '@material-ui/icons/Videocam'
 
 export default RealEstatePhotography;
 
+const prod = process.env.NODE_ENV === 'production'
+
 
 const priceBoxData = [
     {
         mainTitle: '<2500/sf',
         photoPrice: '$125',
         videoPrice: '$200',
-        price_id: {photos: 'price_1IxyvHD2B2kqWDmPn2I17pI2', photoVideo: 'price_1Ixyv7D2B2kqWDmP7NZiT4BX'} 
+        price_id: {
+            photos: prod ? 'price_1IxyvHD2B2kqWDmPn2I17pI2' : 'price_1IxuyFD2B2kqWDmPklb99Jw2', 
+            photoVideo: prod ? 'price_1Ixyv7D2B2kqWDmP7NZiT4BX' : 'price_1IxuzyD2B2kqWDmPdNm6VMov'} 
     },
     {
         mainTitle: '2500 - 4000/sf',
         photoPrice: '$175',
         videoPrice: '$250',
-        price_id: {photos: 'price_1IxyumD2B2kqWDmPIEm7nwUt', photoVideo: 'price_1IxyuWD2B2kqWDmPpOSIVXkN'}
+        price_id: {
+            photos: prod ? 'price_1IxyumD2B2kqWDmPIEm7nwUt' : 'price_1Ixv4ZD2B2kqWDmPfc30BqfY', 
+            photoVideo: prod ? 'price_1IxyuWD2B2kqWDmPpOSIVXkN' : 'price_1IxxVcD2B2kqWDmPxeoUihFK'}
     },
     {
         mainTitle: '>4000/sf',
         photoPrice: '$300',
         videoPrice: '$375',
-        price_id: {photos: 'price_1IxyuFD2B2kqWDmPibgDyplo', photoVideo: 'price_1IxytzD2B2kqWDmPvaFbb5ur'}
+        price_id: {
+            photos: prod ? 'price_1IxyuFD2B2kqWDmPibgDyplo' : 'price_1IxxX3D2B2kqWDmP3H9JW1ju', 
+            photoVideo: prod ? 'price_1IxytzD2B2kqWDmPvaFbb5ur' : 'price_1IxxYJD2B2kqWDmPmXhHvZkS'}
     },
-    {
-        mainTitle: 'Free',
-        photoPrice: '$1',
-        videoPrice: '$1',
-        price_id: {photos: 'price_1IxyvuD2B2kqWDmPkwXI70aV', photoVideo: 'price_1IxyvuD2B2kqWDmPkwXI70aV'}
-    },
+    // {
+    //     mainTitle: 'Free',
+    //     photoPrice: '$1',
+    //     videoPrice: '$1',
+    //     price_id: {
+    //         photos: prod ? 'price_1IxyvuD2B2kqWDmPkwXI70aV' : 'price_1IxyjFD2B2kqWDmPTODsrJXV', 
+    //         photoVideo: prod ? 'price_1IxyvuD2B2kqWDmPkwXI70aV' : 'price_1IxyjFD2B2kqWDmPTODsrJXV'}
+    // },
 ]
-
-

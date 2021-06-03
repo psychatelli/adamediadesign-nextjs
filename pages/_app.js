@@ -1,9 +1,9 @@
+import '../styles/globals.scss';
 import { useEffect } from 'react';
 import MainNav from '../components/MainNav';
 import Footer from '../components/Footer';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '../src/theme';
-import '../styles/globals.scss';
 
 
 function MyApp({ Component, pageProps }) {

@@ -1,15 +1,15 @@
 import React from 'react'
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
 import VideocamIcon from '@material-ui/icons/Videocam';
-import HomeIcon from '@material-ui/icons/Home';
 import CheckoutButton from '../CheckoutButton/checkoutButton'
-import './priceBox.scss'
+import Link from 'next/link'
 
-const PriceBox = ({mainTitle, photoPrice, videoPrice, price_id, cancelPath, key }) => {
+
+const PriceBox = ({mainTitle, photoPrice, videoPrice, price_id, cancelPath, icon, donateBtn = false }) => {
     return (
-        <div className='priceBox' key={key}>
+        <div className='priceBox'>
             <div className='PriceBoxRow mainTitleSection'>
-                <HomeIcon/>
+                {icon}
                 <div className='priceBoxCell'> {mainTitle} </div>
             </div>
   
@@ -20,8 +20,8 @@ const PriceBox = ({mainTitle, photoPrice, videoPrice, price_id, cancelPath, key 
                         (Photos)
                         </div>
                         <div className='priceBoxCell price'> {photoPrice}</div>
-                        <CheckoutButton cancelPath={cancelPath} price_id={price_id.photos}/>
-                    </div>
+                        {donateBtn ? <Link  href='/ourhouse-photography-donation'><div className='donateBtn'> Donate </div></Link> : <CheckoutButton cancelPath={cancelPath}  price_id={price_id.photos}/>}                    
+                        </div>
 
                     <div className='PriceBoxColumn'>
                         <div className='priceBoxCell serviceTitle'> 
@@ -32,7 +32,9 @@ const PriceBox = ({mainTitle, photoPrice, videoPrice, price_id, cancelPath, key 
                         (Photos & videos)
                         </div>
                         <div className='priceBoxCell price'>{videoPrice}</div>
-                        <CheckoutButton cancelPath={cancelPath}  price_id={price_id.photoVideo}/>
+                        
+                        {donateBtn ? <Link  href='/ourhouse-photography-donation'><div className='donateBtn'> Donate </div></Link> : <CheckoutButton cancelPath={cancelPath}  price_id={price_id.photoVideo}/>}
+                        
                     </div>
         </div>
             

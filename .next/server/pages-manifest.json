@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/services/videos/real-estate-photography": "pages/services/videos/real-estate-photography.js",
-  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
+  "/services/videos/events": "pages/services/videos/events.js",
+  "/ourhouse-photography-donation": "pages/ourhouse-photography-donation.js"
 }

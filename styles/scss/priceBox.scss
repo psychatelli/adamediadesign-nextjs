@@ -67,6 +67,19 @@
 }
 
 
+.donateBtn, .checkoutButton {
+    background: #282828;
+    color: white;
+    padding: 7px 20px;
+}
+
+.donateBtn:hover, .checkoutButton:hover {
+    background: aqua;
+    color: #282828;
+    cursor: pointer;
+}
+
+
 @media only screen and (min-width: 50px) and (max-width: 450) {
    
 

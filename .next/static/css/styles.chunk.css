@@ -288,6 +288,39 @@
   .realEstatePhotography .priceBox {
     width: 100%; } }
 
+.events .eventsPriceboxWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0px auto; }
+
+.events .contentArea, .events .uxui .uxuiContentArea, .uxui .events .uxuiContentArea {
+  padding: 20px; }
+
+.events .serviceDescriptionBox {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center; }
+  .events .serviceDescriptionBox .iconContainer {
+    margin-right: 30px; }
+    .events .serviceDescriptionBox .iconContainer .MuiSvgIcon-root {
+      color: gray;
+      font-size: 25px; }
+
+@media only screen and (min-width: 50px) and (max-width: 850px) {
+  .events .eventsPriceboxWrapper {
+    flex-direction: column;
+    align-items: center; } }
+
+@media only screen and (min-width: 50px) and (max-width: 690px) {
+  .eventsPhotography .contentArea, .eventsPhotography .uxui .uxuiContentArea, .uxui .eventsPhotography .uxuiContentArea {
+    padding: 10px; }
+  .eventsPhotography .lightGray-banner h1 {
+    font-size: 38px !important; }
+  .eventsPhotography .priceBox {
+    width: 100%; } }
+
 .footer {
   background: black;
   width: 100%;
@@ -323,7 +356,8 @@
   color: #00ffff;
   margin-bottom: 0px;
   padding: 20px;
-  height: 30vh; }
+  height: 30vh;
+  width: 100%; }
   .secondary-banners h1, .process-banner h1, .gray-banner h1, .red-banner h1, .lightGray-banner h1, .orange-banner h1, .blue-banner h1, .primaryBlue-banner h1, .blue-purple-banner h1 {
     font-size: 60px !important; }
 
@@ -417,6 +451,12 @@
   background: -ms-linear-gradient(-45deg, #e6e0df 0%, #dbd9d8 100%);
   background: linear-gradient(135deg, #e6e0df 0%, #dbd9d8 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e0df', endColorstr='#dbd9d8', GradientType=1 ); }
+
+.ourHouseBanner .ourHouseLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
 
 /* CSS Document */
 /* Media Query Customization  */
@@ -625,6 +665,16 @@
   padding: 10px; }
   .PriceBoxColumn.rightBorder {
     border-right: solid 1px white; }
+
+.donateBtn, .checkoutButton {
+  background: #282828;
+  color: white;
+  padding: 7px 20px; }
+
+.donateBtn:hover, .checkoutButton:hover {
+  background: aqua;
+  color: #282828;
+  cursor: pointer; }
 
 html,
 body {
@@ -909,14 +959,4 @@ h4, h5, h6 {
 
 .interface_img img {
   width: 95%; }
-
-.checkoutButton {
-  background: #282828;
-  color: white;
-  padding: 7px 20px; }
-
-.checkoutButton:hover {
-  background: aqua;
-  color: #282828;
-  cursor: pointer; }
 

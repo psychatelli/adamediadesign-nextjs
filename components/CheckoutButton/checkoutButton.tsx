@@ -1,7 +1,6 @@
 
  
 import { loadStripe } from '@stripe/stripe-js'
-import './checkoutButton.scss'
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PK)
  

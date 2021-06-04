@@ -3,20 +3,22 @@ import PageHead from '../../../components/head'
 import PriceBox from '../../../components/priceBox/priceBox'
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera'
 import VideocamIcon from '@material-ui/icons/Videocam'
+import HomeIcon from '@material-ui/icons/Home';
 
 
 
  const RealEstatePhotography = () => {
 
     const priceBoxes = priceBoxData.map((item, index) => {
-        return <PriceBox 
+        return <div key={index}> <PriceBox 
         mainTitle={item.mainTitle}
         photoPrice={item.photoPrice} 
         videoPrice={item.videoPrice}
         price_id={item.price_id}
         cancelPath='services/videos/real-estate-photography'
-        key={index}
+        icon={<HomeIcon/>}
         />
+        </div>
     })
 
     return (

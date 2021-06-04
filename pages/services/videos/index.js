@@ -22,17 +22,17 @@ import PageHead from '../../../components/head'
                 <div className="contentArea">
 
                 <div className='videoServiceNav'>
-                <Link  href='videos/real-estate-photography'> 
-                        <div className='videoServiceNavItem'>
-                        Real Estate Photography
-                        </div>
-                </Link> 
+                    <Link href='videos/real-estate-photography'> 
+                            <div className='videoServiceNavItem'>
+                            Real Estate Photography
+                            </div>
+                    </Link> 
 
-                <Link  href='videos/real-estate-photography'> 
-                        <div className='videoServiceNavItem'>
-                            Event Photography
-                        </div>
-                </Link> 
+                    <Link href='videos/events'> 
+                            <div className='videoServiceNavItem'>
+                                Event Photography
+                            </div>
+                    </Link> 
                 </div>
 
 

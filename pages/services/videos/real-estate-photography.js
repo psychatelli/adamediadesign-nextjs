@@ -1,6 +1,6 @@
 import React from 'react'
 import PageHead from '../../../components/head'
-import PriceBox from '../../../components/priceBox/priceBox'
+import PriceBox from '../../../components/priceBox'
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera'
 import VideocamIcon from '@material-ui/icons/Videocam'
 import HomeIcon from '@material-ui/icons/Home';

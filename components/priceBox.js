@@ -1,10 +1,10 @@
 import React from 'react'
 import PhotoCameraIcon from '@material-ui/icons/PhotoCamera';
 import VideocamIcon from '@material-ui/icons/Videocam';
-import CheckoutButton from '../CheckoutButton/checkoutButton'
+import CheckoutButton from './CheckoutButton/checkoutButton'
 import Link from 'next/link'
 
-
+ 
 const PriceBox = ({mainTitle, photoPrice, videoPrice, price_id, cancelPath, icon, donateBtn = false }) => {
 
     console.log('box')

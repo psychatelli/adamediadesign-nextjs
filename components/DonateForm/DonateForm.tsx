@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 
-import CustomDonationInput from '../../components/ElementsForm/CustomDonationInput'
+import CustomDonationInput from './CustomDonationInput'
 import getStripe from '../../utilities/get-stripejs'
 import { fetchPostJSON } from '../../utilities/api-helpers'
 import { formatAmountForDisplay } from '../../utilities/stripe-helpers'
 import * as config from '../../config'
+import Button from '@material-ui/core/Button';
+import './donateForm.scss'
 
 const ElementsDonationForm
  = () => {
@@ -46,9 +48,14 @@ const ElementsDonationForm
     console.warn(error.message)
     setLoading(false)
   }
-
+ 
   return (
+    <div className='donateForm'>
+
     <form onSubmit={handleSubmit}>
+
+
+      <div className='formWrapper'>
       <CustomDonationInput
         className="checkout-style"
         name={'customDonation'}
@@ -59,14 +66,20 @@ const ElementsDonationForm
         currency={config.CURRENCY}
         onChange={handleInputChange}
       />
-      <button
-        className="checkout-style-background"
+
+
+      <Button
+        className="checkoutDonateBtn"
         type="submit"
         disabled={loading}
       >
         Donate {formatAmountForDisplay(input.customDonation, config.CURRENCY)}
-      </button>
+      </Button>
+      </div>
+      
     </form>
+    </div>
+
   )
 }
 

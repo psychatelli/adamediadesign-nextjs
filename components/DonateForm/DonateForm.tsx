@@ -11,7 +11,9 @@ import './donateForm.scss'
 const ElementsDonationForm
  = () => {
   const [loading, setLoading] = useState(false)
-  const [input, setInput] = useState('')
+  const [input, setInput] = useState({
+    customDonation: '',
+  })
 
   const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (e) =>
     setInput({

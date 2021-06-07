@@ -11,9 +11,7 @@ import './donateForm.scss'
 const ElementsDonationForm
  = () => {
   const [loading, setLoading] = useState(false)
-  const [input, setInput] = useState({
-    customDonation: Math.round(config.MAX_AMOUNT / config.AMOUNT_STEP),
-  })
+  const [input, setInput] = useState('')
 
   const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (e) =>
     setInput({

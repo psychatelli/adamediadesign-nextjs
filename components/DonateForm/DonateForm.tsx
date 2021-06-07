@@ -12,7 +12,7 @@ const ElementsDonationForm
  = () => {
   const [loading, setLoading] = useState(false)
   const [input, setInput] = useState({
-    customDonation: '',
+    customDonation: null,
   })
 
   const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (e) =>

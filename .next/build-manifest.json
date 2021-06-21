@@ -26,12 +26,10 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/ourhouse-photography-donation": [
+    "/services/videos": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/css/styles.chunk.css",
-      "static/chunks/styles.js",
-      "static/chunks/pages/ourhouse-photography-donation.js"
+      "static/chunks/pages/services/videos.js"
     ],
     "/services/videos/events": [
       "static/chunks/main.js",

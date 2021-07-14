@@ -26,15 +26,12 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/services/videos": [
+    "/aprils-magic-wond": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/services/videos.js"
-    ],
-    "/services/videos/events": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/services/videos/events.js"
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/chunks/pages/aprils-magic-wond.js"
     ]
   },
   "ampFirstPages": []

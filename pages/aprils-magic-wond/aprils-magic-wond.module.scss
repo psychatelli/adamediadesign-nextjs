@@ -1,0 +1,67 @@
+$pink-color: rgb(241, 80, 107);
+$btn-color: aqua;
+.aprils-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    // background: black;
+    color: $pink-color;
+
+    .tool-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // width: 100%;
+        height: 200px;
+        margin: 5% auto 30px auto;
+        background: url('/glitter.gif') no-repeat;
+
+        h2 {
+            
+            font-size: 30px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    }
+
+
+}
+
+.name-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+
+    input[type="file"] {
+        display: none;
+    }
+    .customFileUpload {
+        border: 1px solid white;
+        background: $pink-color;
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+        color: white;
+        .button-style {
+            display: flex;
+            align-items: center;
+
+            span {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .file-names-list {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        overflow: scroll;
+        margin: 20px 0px;
+        color: black
+    }
+}

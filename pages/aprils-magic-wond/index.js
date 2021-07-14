@@ -34,7 +34,7 @@ import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
             <div className='absolute-div '></div>
             <div className='tool-header'>
                 
-                <h2>APRILS MAGIC WOND</h2>
+                <h2>APRIL'S MAGIC WOND</h2>
                 <Image src='/magic_wand.png' width='100%' height='600px'/>
             </div>
 

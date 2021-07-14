@@ -35,6 +35,16 @@ $btn-color: aqua;
     align-items: center;
     height: auto;
 
+    .choose-append-form {
+        margin-bottom: 20px;
+        span {
+            margin-right: 10px;
+
+        }
+        input {
+            padding: 10px;
+        }
+    }
     input[type="file"] {
         display: none;
     }

@@ -1010,6 +1010,12 @@ h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   height: auto; }
+  .name-list-wrapper .choose-append-form {
+    margin-bottom: 20px; }
+    .name-list-wrapper .choose-append-form span {
+      margin-right: 10px; }
+    .name-list-wrapper .choose-append-form input {
+      padding: 10px; }
   .name-list-wrapper input[type="file"] {
     display: none; }
   .name-list-wrapper .customFileUpload {

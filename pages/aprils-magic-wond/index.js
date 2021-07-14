@@ -2,10 +2,12 @@ import React, { useState, useRef } from 'react'
 import Image from 'next/image'
 import styles from './aprils-magic-wond.module.scss'
 import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
+import TextField from '@material-ui/core/TextField';
 
  const AprilsMagicWond = () => {
 
     const [listOfNames, setListOfNames] = useState([])
+    const [selectedAppend, setSelectedAppend] = useState('')
     const inputEl = useRef(null);
 
     const listOfNamesArray = []
@@ -17,7 +19,9 @@ import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
          for (let step = 0; step < numberOfFilesSelected; step++) {
             listOfNamesArray.push(names.files.item(step).name.substring(0,32))
           }
-          console.log(listOfNamesArray)
+          for(var i=0;i<listOfNamesArray.length;i++){
+            listOfNamesArray[i]=listOfNamesArray[i];
+}
           setListOfNames(listOfNamesArray)
         // alert('Selected file: ' + names.files.item(0).name);
 
@@ -25,7 +29,7 @@ import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
         // alert('Selected file: ' + name.files.item(0).type);
       }
 
-    const fullListOfNames = listOfNames.map(item =>  <div key={item}>{item} </div>)
+    const fullListOfNames = listOfNames.map(item =>  <div key={item}>{selectedAppend}{item} </div>)
 
 
     return (
@@ -41,12 +45,22 @@ import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 
 
             <div className='name-list-wrapper'>
-                <div>
+                
+                    <div className='choose-append-form'>
+                        <span>Choose Beginning of File Names</span>
+                        {/* <input type= onChange={(e) => setSelectedAppend(e.target.value)} /> */}
+                        <input  
+                        value={selectedAppend} 
+                        placeholder='insert text...'
+                        onChange={(e) => setSelectedAppend(e.target.value)} id="outlined-basic" label="Outlined" variant="outlined" 
+                        />
+
+                    </div>
+
                     <label className='customFileUpload'>
                     <div className='button-style'>  <span><InsertDriveFileIcon/></span>Choose File </div>
                     <input  ref={inputEl} type="file" id="fileInput" multiple onChange={() => getNames()}/>
                     </label>
-                </div>
 
                 <div className='file-names-list'>
                 {fullListOfNames}

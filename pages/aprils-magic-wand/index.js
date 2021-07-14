@@ -38,7 +38,7 @@ import TextField from '@material-ui/core/TextField';
             <div className='absolute-div '></div>
             <div className='tool-header'>
                 
-                <h2>APRIL'S MAGIC WOND</h2>
+                <h2>APRIL'S MAGIC WAND</h2>
                 <Image src='/magic_wand.png' width='100%' height='600px'/>
             </div>
 

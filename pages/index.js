@@ -49,7 +49,7 @@ import Link from 'next/link'
 
           <div className="NavRow"
             style={{
-            backgroundImage: "url(" + `${require("../public/NavRowBackground.png")}` + ")",
+            backgroundImage: "url(" + `${require("/public/NavRowBackground.png")}` + ")",
             width: "100%",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",

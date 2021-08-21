@@ -1,6 +1,21 @@
 {
   "/_app": "pages/_app.js",
+  "/about": "pages/about.html",
+  "/api/checkout/[id]": "pages/api/checkout/[id].js",
+  "/api/checkout/donateSession": "pages/api/checkout/donateSession.js",
+  "/api/checkout/session": "pages/api/checkout/session.js",
+  "/api/hello": "pages/api/hello.js",
+  "/aprils-magic-wand": "pages/aprils-magic-wand.html",
+  "/contact": "pages/contact.html",
+  "/": "pages/index.html",
+  "/ourhouse-photography-donation": "pages/ourhouse-photography-donation.html",
+  "/portfolio/[project]": "pages/portfolio/[project].html",
+  "/result": "pages/result.html",
+  "/services/ux-ui": "pages/services/ux-ui.html",
+  "/services/videos/events": "pages/services/videos/events.html",
+  "/services/videos": "pages/services/videos.html",
+  "/services/videos/real-estate-photography": "pages/services/videos/real-estate-photography.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/aprils-magic-wond": "pages/aprils-magic-wond.js"
+  "/404": "pages/404.html"
 }

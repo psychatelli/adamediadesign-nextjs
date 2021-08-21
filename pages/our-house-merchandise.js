@@ -1,9 +1,7 @@
 import React from 'react'
-import PageHead from '../../components/head'
-import MerchandisePriceBox from '../../components/merchandisePriceBox'
-import PhotoCameraIcon from '@material-ui/icons/PhotoCamera'
-import VideocamIcon from '@material-ui/icons/Videocam'
-import MusicNoteIcon from '@material-ui/icons/MusicNote';
+import PageHead from '../components/head'
+import MerchandisePriceBox from '../components/merchandisePriceBox'
+
 import Image from 'next/image'
 
  const Events = () => {

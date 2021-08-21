@@ -23,8 +23,8 @@ import Image from 'next/image'
         <div className='merchandise'>
 
         <PageHead
-        title='Adamedia Design - Event Photography Tampa FL'
-        description='Event photography - photos, videos, drone shots'
+        title='Our House - Our House Merchandise'
+        description='Our House Merch'
         />
 
             <div className="ourHouseBanner lightGray-banner">

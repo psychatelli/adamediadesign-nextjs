@@ -479,11 +479,14 @@
   background: linear-gradient(135deg, #e6e0df 0%, #dbd9d8 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e0df', endColorstr='#dbd9d8', GradientType=1 ); }
 
-.ourHouseBanner .ourHouseLogo {
+.ourHouseBanner {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%; }
+  align-items: center; }
+  .ourHouseBanner .ourHouseLogo {
+    width: 200px;
+    height: 150px;
+    position: relative; }
 
 /* CSS Document */
 /* Media Query Customization  */
@@ -684,6 +687,11 @@
 .PriceBoxDetailsWrapper {
   display: flex; }
 
+.merchandiseProductDetails {
+  position: relative;
+  width: 100%;
+  height: auto; }
+
 .PriceBoxColumn {
   display: flex;
   flex-direction: column;
@@ -782,6 +790,13 @@ h4, h5, h6 {
 
 .home-brn p:nth-child(3) {
   font-size: 17px; }
+
+.merchandise .merchPriceboxWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0px auto; }
 
 /* HOME 3 SECTINO AREA  */
 .white-bg {

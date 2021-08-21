@@ -51,7 +51,12 @@
 
 .PriceBoxDetailsWrapper {
     display: flex;
+}
 
+.merchandiseProductDetails {
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 .PriceBoxColumn {
     display: flex;

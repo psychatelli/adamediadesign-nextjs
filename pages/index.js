@@ -47,14 +47,7 @@ import Link from 'next/link'
             </div> 
           </div>
 
-          <div className="NavRow"
-            style={{
-            backgroundImage: "url(" + `${require("/public/NavRowBackground.png")}` + ")",
-            width: "100%",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-          >
+          <div className="NavRow">
 
           <Link href="/services/ux-ui">
                 <div className="hover-box-2">

@@ -31,20 +31,21 @@ import Image from 'next/image'
         description='Event photography - photos, videos, drone shots'
         />
 
-            <div className="ourHouseBanner lightGray-banner">
+<div className="ourHouseBanner lightGray-banner">
 
                 <div className='ourHouseLogo'>
                <Image
                 src="/our-house-logo.png"
                 alt="our house logo"
-                width={200}
-                height={150}
+                layout={'fill'} 
+                objectFit={'contain'}
                 priority={true}
-                />
-                <h3> PHOTOS & VIDEOS</h3>
+                /> 
                 </div>
-                
+                <h3> PHOTOS & VIDEOS</h3>
+
             </div>
+
 
             <div className="contentArea">
                 <div className="service-desription">

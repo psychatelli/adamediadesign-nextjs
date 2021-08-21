@@ -137,11 +137,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', end
  
 
 .ourHouseBanner {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .ourHouseLogo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+    width: 200px;
+    height: 150px;
+    position: relative;
+
+        // width: 100%;
     }
 }

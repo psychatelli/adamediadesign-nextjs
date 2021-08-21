@@ -7,7 +7,6 @@ import Link from 'next/link'
  
 const PriceBox = ({mainTitle, photoPrice, videoPrice, price_id, cancelPath, icon, donateBtn = false }) => {
 
-    console.log('box')
     return (
         <div className='priceBox'>
             <div className='PriceBoxRow mainTitleSection'>

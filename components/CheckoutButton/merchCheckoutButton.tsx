@@ -10,7 +10,7 @@ export default function CheckoutButton ({price_id, cancelPath}){
         // Get Stripe.js instance
     
         // Call your backend to create the Checkout Session
-        const { sessionId } = await fetch('/api/checkout/session', { 
+        const { sessionId } = await fetch('/api/checkout/merchSession', { 
             method: 'POST', 
             headers: {
                 "content-type": "application/json"

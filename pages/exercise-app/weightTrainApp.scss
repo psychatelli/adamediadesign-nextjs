@@ -10,7 +10,7 @@ $mostDark: black;
     align-items: center;
     background-color: $veryDark;
     height: 100vh;
-
+    overflow: scroll;
 
     .user-info {
         display: flex;
@@ -28,6 +28,7 @@ $mostDark: black;
     }
 
 .exercise-content-section {
+    
     h2 {
         color: $primaryColor;
     }
@@ -45,7 +46,6 @@ $mostDark: black;
 }
 
 .exercise-list-wrapper {
-    display: flex;
     justify-content: center;
 }
 

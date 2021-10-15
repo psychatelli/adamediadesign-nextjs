@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/services/videos/events": "pages/services/videos/events.js",
-  "/ourhouse-photography-donation": "pages/ourhouse-photography-donation.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/exercise-app": "pages/exercise-app.js"
 }

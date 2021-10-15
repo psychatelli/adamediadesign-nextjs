@@ -1002,41 +1002,193 @@ h4, h5, h6 {
 .interface_img img {
   width: 95%; }
 
-.donateForm {
+.forms-wrapper {
   display: flex;
-  flex-direction: column;
-  color: #585858; }
-  .donateForm .header {
-    margin-bottom: 20px; }
-  .donateForm .checkoutDonateBtn {
-    background: #282828;
-    color: white;
-    padding: 7px 20px;
-    margin-top: 30px;
-    width: 100%; }
-  .donateForm .checkoutDonateBtn:hover {
-    background: aqua;
-    color: #282828;
-    cursor: pointer; }
-  .donateForm .inputWrapper {
+  flex-direction: column; }
+  .forms-wrapper .new-exercise-form-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 90%;
-    margin: 0 auto; }
-    .donateForm .inputWrapper input {
-      margin: 5px 20px 5px 0px;
-      width: 100%;
-      height: 40px;
+    align-items: center;
+    padding: 20px; }
+    .forms-wrapper .new-exercise-form-wrapper .new-exercise-form {
+      display: flex;
+      flex-direction: column;
+      width: 300px; }
+      .forms-wrapper .new-exercise-form-wrapper .new-exercise-form .MuiFormControl-root {
+        margin-bottom: 20px; }
+      .forms-wrapper .new-exercise-form-wrapper .new-exercise-form .MuiButton-root {
+        background: #333232; }
+      .forms-wrapper .new-exercise-form-wrapper .new-exercise-form .btn-group {
+        display: flex;
+        flex-direction: column; }
+      .forms-wrapper .new-exercise-form-wrapper .new-exercise-form .delete-btn.MuiButton-root {
+        margin-top: 5px;
+        background: #f57070; }
+  .forms-wrapper .close-modal-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer; }
+
+.forms-wrapper {
+  display: flex;
+  flex-direction: column; }
+  .forms-wrapper .new-user-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; }
+    .forms-wrapper .new-user-form-wrapper .new-user-form {
+      display: flex;
+      flex-direction: column;
+      width: 300px; }
+      .forms-wrapper .new-user-form-wrapper .new-user-form .MuiFormControl-root {
+        margin-bottom: 20px; }
+      .forms-wrapper .new-user-form-wrapper .new-user-form .MuiButton-root {
+        background: #333232; }
+  .forms-wrapper .close-modal-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px; }
+
+.draggable-main {
+  margin: 0;
+  padding: 0;
+  height: 1000px;
+  width: 100%;
+  user-select: none;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  background: #f0f0f0; }
+
+.content {
+  position: relative;
+  width: 320px;
+  height: 1040px !important;
+  border: solid blue; }
+
+.content .card-wrapper {
+  position: absolute;
+  height: 300px;
+  overflow: visible;
+  pointer-events: auto;
+  transform-origin: 50% 50% 0px;
+  border-radius: 5px;
+  color: white;
+  padding: 20x;
+  border: solid thin red; }
+
+.card-wrapper {
+  width: 350px;
+  background: #333232;
+  border: solid thin #000000;
+  color: white;
+  margin-bottom: 20px;
+  padding: 5px; }
+  .card-wrapper .exercise-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b8b83d;
+    text-transform: uppercase;
+    height: 50px;
+    font-size: 20px; }
+    .card-wrapper .exercise-name .MuiSvgIcon-root {
+      color: #1DE3C6; }
+    .card-wrapper .exercise-name .name {
+      display: flex;
+      align-items: center; }
+      .card-wrapper .exercise-name .name .icon {
+        font-size: 9px;
+        margin-right: 5px; }
+    .card-wrapper .exercise-name .edit-btn {
+      cursor: pointer; }
+  .card-wrapper .value-box {
+    display: flex;
+    justify-content: space-between;
+    background: #1E1E1E;
+    margin: 5px;
+    border-left: solid #b8b83d;
+    padding: 5px 10px 5px 10px;
+    color: #1DE3C6;
+    font-size: 20px; }
+  .card-wrapper .first-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; }
+    .card-wrapper .first-row .value-box {
+      width: 50%; }
+  .card-wrapper .second-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .card-wrapper .second-row .value-box {
+      width: 70%; }
+  .card-wrapper .MuiSelect-select, .card-wrapper .MuiSvgIcon-root, .card-wrapper .MuiInputLabel-root {
+    color: #1DE3C6; }
+  .card-wrapper .select-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 10px auto; }
+    .card-wrapper .select-item-wrapper label {
+      color: #1DE3C6;
+      margin-bottom: 5px; }
+    .card-wrapper .select-item-wrapper select {
       background: none;
-      border: solid thin gray;
-      border-radius: 10px;
+      color: #1DE3C6;
+      width: 100%;
+      margin: 0px auto;
       padding: 10px; }
 
-@media only screen and (min-width: 50px) and (max-width: 690px) {
-  .donateForm .inputWrapper {
+.main-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1E1E1E;
+  height: 100vh;
+  overflow: scroll; }
+  .main-page-wrapper .user-info {
     display: flex;
-    flex-direction: column; }
-    .donateForm .inputWrapper input {
-      width: 100%; } }
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+    background: rgba(255, 166, 0, 0.233);
+    width: 350px;
+    padding: 10px;
+    color: orange; }
+    .main-page-wrapper .user-info .name {
+      font-size: 20px;
+      text-transform: uppercase; }
+  .main-page-wrapper .exercise-content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; }
+    .main-page-wrapper .exercise-content-section h2 {
+      color: #1DE3C6; }
+    .main-page-wrapper .exercise-content-section .exercise-item-box {
+      background: lightgray;
+      border-radius: 10px;
+      padding: 20px; }
+  .main-page-wrapper .exercise-list-wrapper {
+    justify-content: center; }
+  .main-page-wrapper .options-controles {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    margin: 0 auto; }
+    .main-page-wrapper .options-controles .MuiButton-root {
+      color: white;
+      margin: 5px; }
+    .main-page-wrapper .options-controles .MuiButton-outlinedPrimary {
+      border: solid thin #1DE3C6; }
+    .main-page-wrapper .options-controles .MuiSvgIcon-root {
+      color: orange; }
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  background: rgba(0, 0, 0, 0.712) !important; }
 

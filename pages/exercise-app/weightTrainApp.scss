@@ -1,0 +1,73 @@
+$primaryColor: #1DE3C6;
+$midDark: #333232;
+$veryDark: #1E1E1E;
+$mostDark: black;
+
+
+.main-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $veryDark;
+    height: 100vh;
+
+
+    .user-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0px;
+        background: rgba(255, 166, 0, 0.233);
+        width: 350px;
+        padding: 10px;
+        .name {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        color: orange;
+    }
+
+.exercise-content-section {
+    h2 {
+        color: $primaryColor;
+    }
+    // background: rgb(100, 100, 100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    .exercise-item-box {
+        background: lightgray;
+        border-radius: 10px;
+        padding: 20px;
+    }
+}
+
+.exercise-list-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+   .options-controles {
+       display: flex;
+       justify-content: center;
+       width: 350px;
+       margin: 0 auto;
+
+       .MuiButton-root {
+           color: white;
+           margin: 5px;
+       }
+       .MuiButton-outlinedPrimary {
+        border: solid thin $primaryColor;
+       }
+       .MuiSvgIcon-root  {
+           color: orange;
+       }
+   }
+}
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open  {
+    background: rgba(0, 0, 0, 0.712)!important;
+}

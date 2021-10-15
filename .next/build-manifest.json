@@ -14,6 +14,11 @@
     "static/development/_ssgManifest.js"
   ],
   "pages": {
+    "/": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/index.js"
+    ],
     "/_app": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
@@ -26,10 +31,12 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/services/videos": [
+    "/ourhouse-photography-donation": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/services/videos.js"
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/chunks/pages/ourhouse-photography-donation.js"
     ],
     "/services/videos/events": [
       "static/chunks/main.js",

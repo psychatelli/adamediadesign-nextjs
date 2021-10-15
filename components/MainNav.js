@@ -3,7 +3,7 @@ import  React, { useState} from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { makeStyles } from '@material-ui/core/styles';
-import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
+import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import ListItem from '@material-ui/core/ListItem';
 import List from '@material-ui/core/List';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -15,8 +15,6 @@ import HomeIcon from '@material-ui/icons/Home';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import WebIcon from '@material-ui/icons/Web';
 import MenuIcon from '@material-ui/icons/Menu';
-
-
 
 const useStyles = makeStyles({
     list: {

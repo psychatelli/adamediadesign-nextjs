@@ -3,5 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/services/videos/events": "pages/services/videos/events.js",
-  "/services/videos": "pages/services/videos.js"
+  "/ourhouse-photography-donation": "pages/ourhouse-photography-donation.js",
+  "/": "pages/index.js"
 }

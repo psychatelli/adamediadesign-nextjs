@@ -5,7 +5,7 @@ import getStripe from '../../utilities/get-stripejs'
 import { fetchPostJSON } from '../../utilities/api-helpers'
 import { formatAmountForDisplay } from '../../utilities/stripe-helpers'
 import * as config from '../../config'
-import Button from '@material-ui/core/Button';
+import Button from '@mui/material/Button';
 import './donateForm.scss'
 
 const ElementsDonationForm
@@ -72,6 +72,8 @@ const ElementsDonationForm
         className="checkoutDonateBtn"
         type="submit"
         disabled={loading}
+        variant='contained'
+        style={{marginTop: '20px'}}
       >
         Donate {formatAmountForDisplay(input.customDonation, config.CURRENCY)}
       </Button>

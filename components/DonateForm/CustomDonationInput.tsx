@@ -1,8 +1,5 @@
 import React from 'react'
 import { formatAmountForDisplay } from '../../utilities/stripe-helpers'
-import FormControl from '@material-ui/core/FormControl';
-import OutlinedInput from '@material-ui/core/OutlinedInput';
-import InputLabel from '@material-ui/core/InputLabel';
 
 type Props = {
   name: string

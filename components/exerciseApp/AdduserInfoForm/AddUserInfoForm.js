@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import CloseIcon from '@mui/icons-material/Close';
 
-import './addUserInfoForm.scss'
+import './addUserInfoForm.module.scss'
 
  const AddUserInfoForm = ({ name, goal, submitUserInfo, handleModalState, setGoal, setName }) => {
 

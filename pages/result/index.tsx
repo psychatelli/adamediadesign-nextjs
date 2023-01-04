@@ -4,7 +4,7 @@ import useSWR from 'swr'
 import Link from 'next/link'
 import Button from '@material-ui/core/Button';
 
-import './result.scss'
+import './result.module.scss'
 
 export default function Result(){
  

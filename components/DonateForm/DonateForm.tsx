@@ -6,7 +6,7 @@ import { fetchPostJSON } from '../../utilities/api-helpers'
 import { formatAmountForDisplay } from '../../utilities/stripe-helpers'
 import * as config from '../../config'
 import Button from '@mui/material/Button';
-import './donateForm.scss'
+import './donateForm.module.scss'
 
 const ElementsDonationForm
  = () => {

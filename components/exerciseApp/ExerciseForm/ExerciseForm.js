@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 import CloseIcon from '@mui/icons-material/Close';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Button from '@mui/material/Button';
-import './exerciseForm.scss'
+import './exerciseForm.module.scss'
 
  const AddExerciseForm = ({  handleAddExerciseModalState, setUser, user, exerciseToEdit, setExerciseToEdit, }) => {
 

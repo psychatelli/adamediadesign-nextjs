@@ -1,0 +1,41 @@
+
+.categorySection {
+    margin: 20px;
+
+        .categoryMainIitle {
+            font-family: 'Fira Sans';
+            font-size: 50px;
+            a {
+                color: rgb(241, 113, 113)!important;
+            }
+        }
+    
+        
+        .categoryItem {
+        margin: 20px 0px;
+        border: solid thin gray;
+
+        .title {
+            margin: 10px 0px;
+        }
+
+        .imgTextContainer {
+            display: flex;
+
+
+            .image {
+                width: 400px;
+                height: 300px;
+                position: relative;
+            }
+
+            .text {
+                margin: 0px 20px;
+
+                
+            }
+        }
+    }
+        
+    
+    }

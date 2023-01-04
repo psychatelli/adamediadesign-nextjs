@@ -12,7 +12,7 @@ import Modal from 'react-modal';
 
 import Button from '@mui/material/Button';
 
-import './weightTrainApp.scss'
+import './weightTrainApp.module.scss'
 
  const Main = () => {
 

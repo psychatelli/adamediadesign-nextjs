@@ -7,7 +7,7 @@ import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import EditIcon from '@mui/icons-material/Edit';
 
 
-import './exerciseWidget.scss'
+import './exerciseWidget.module.scss'
 
 const ExerciseWidget = ({exercise, editExercise, user}) => {
 

@@ -1,11 +1,11 @@
 import PageHead from '../components/head'
 import Image from 'next/image'
-import Skills from '../components/Skills';
-import Link from 'next/link'
+// import Skills from '../components/Skills';
+import ContentSectionListWidget from '../components/ContentSectionListWidget/ContentSectionListWidget'
+import ColumnSquareLinks from '../components/ThreeColumnSquareLinks'
+
 
  const Home = () => {
-
-
 
 
 
@@ -46,72 +46,21 @@ import Link from 'next/link'
                 </center>
             </div> 
           </div>
-
-          <div className="NavRow">
-
-          <Link href="/services/ux-ui">
-                <div className="hover-box-2">
-                    <div className="title">
-                      <h4>SOFTWARE | WEB PROJECTS</h4>
-                    </div>
-
-                    <div className='image'>
-                    <Image
-                          src="/projects-icon.png"
-                          alt="death star"
-                          layout={'fill'} 
-                          objectFit={'contain'}
-                          priority={true}
-                          />
-                    </div>  
-                </div>
-            </Link>
-           
-
-            <Link href="/about">
-                <div className="hover-box-2">
-                    <div className="title">
-                      <h4>ABOUT</h4>
-                    </div>
-
-                    <div className='image'>
-                    <Image
-                        src="/about-me-icon.png"
-                        alt="Picture of the author"
-                        layout={'fill'} 
-                          objectFit={'contain'}
-                        priority={true}
-                        />
-                    </div>
-                </div> 
-            </Link>
-            
-            <Link href="/services/videos">
-              <div className="hover-box-2">
-                  <div className="title">
-                      <h4>VIDEOS</h4>
-                  </div>
-
-                  <div className='image'>
-                        <Image
-                        src="/video_production_icon.png"
-                        alt="Picture of the author"
-                        layout={'fill'} 
-                        objectFit={'contain'}
-                        priority={true}
-                        />
-                  </div>
-              </div>
-            </Link>
-          </div>
-
-
       </div>
 
-          <div className='myHex'>
 
-          </div>
-        <Skills/>
+      <div className='categories-wrapper'>
+        {categoryContent.map(item => <ContentSectionListWidget mainTitle={item.mainTitle} sectionItems={item.sectionItems} />)}
+      </div>
+
+
+          {/* <div className='myHex'>
+
+          </div> */}
+
+        {/* <Skills/> */}
+
+     
        
       
     </div>
@@ -120,3 +69,69 @@ import Link from 'next/link'
 
 
 export default Home;
+
+// Youtube
+// podcasting
+// Web Development
+// Community Building
+
+
+const categoryContent = [
+  {
+    mainTitle: <div> I build <a href='link'> YouTube videos </a> to educate and inspire </div> ,
+    sectionItems: [
+        {
+          title: 'my title 1',
+          img: '/red-chart.png',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
+        }, 
+        {
+          title: 'my title 2',
+          img: '/red-chart.png',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
+        } 
+      ]
+  },
+  {
+    mainTitle: <div>I produce <a href='link'> Podcasts </a></div>,
+    sectionItems: [
+        {
+          title: 'my title 1',
+          img: '/red-chart.png',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
+        }, 
+        {
+          title: 'my title 2',
+          img: '/red-chart.png',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
+        } 
+      ]
+  },
+  {
+    mainTitle: <div>I am a <a href='link'> Web Developer</a> </div>,
+    sectionItems: [
+        {
+          title: 'my title 1',
+          img: '/red-chart.png',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
+        }, 
+        {
+          title: 'my title 2',
+          img: '/red-chart.png',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
+        } 
+      ]
+    },
+    {
+      mainTitle: <div>I build <a href='link'> Communities </a> </div>,
+      sectionItems: [
+          {
+            title: 'my title 1',
+            img: '/red-chart.png',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco'
+          }, 
+          
+        ]
+      },
+
+]

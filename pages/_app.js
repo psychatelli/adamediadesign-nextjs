@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import MainNav from '../components/MainNav';
 import Footer from '../components/Footer';
 import { ThemeProvider } from '@material-ui/core/styles';
+import { motion } from 'framer-motion'
+
 import theme from '../src/theme';
 
 
@@ -22,8 +24,9 @@ function MyApp({ Component, pageProps }) {
   <content>
 
     <div className='appWrapper'>
+    <MainNav/>
+
         <div>
-        <MainNav/>
         <Component {...pageProps} />
         </div>
         

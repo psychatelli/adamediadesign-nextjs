@@ -22,9 +22,9 @@ import PageHead from '../components/head'
         <div className='description section'>
             <h5>ABOUT</h5>
             <p>
-                From his early years as a freelancer in Silicon Valley working out of the WeWork TechHub to today, Adam has established himself as a professional in multiple areas of the tech industry including web development, software development (full-stack), native app development, digital marketing, video production, graphic design, and UX/UI. He has worked internationally from South Korea, Mexico, and the USA.  His work has ranged from small business community projects, to working with top names such as Birkshire Hathaway by way of PWC, and most recently building projects for the Department of Defence by way of the famous and exclusive AI (Artificial Intelligence) laboratory The Inc Lab located in Verginia and Tampa Bay. 
-                <br/>
-                Adam is open to hearing about your venture and the needs to fulfill your journey.
+            From his early years as a freelancer in Silicon Valley working out of the WeWork TechHub to today, Adam has established himself as a professional in multiple areas of the tech industry including software development, digital marketing, and video production. His work has ranged from small business community projects, to working with top names such as Berkshire Hathaway by way of PWC, and most recently building projects for the Department of Defence by way of the famous and exclusive AI (Artificial Intelligence) laboratory TheIncLab located in Virginia and Tampa Bay.
+               <br/>
+               Adam is open to hearing about your venture and the needs to fulfill your journey.
             </p>
 
         </div>
